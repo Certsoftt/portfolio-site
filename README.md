@@ -1,16 +1,7 @@
-![landy](https://user-images.githubusercontent.com/48876996/121569479-e179db80-ca31-11eb-8a48-9c3de9b142f3.gif)
-
-![Landy React Template License](https://img.shields.io/github/license/Adrinlol/landy-react-template)
-![Landy React Template Release Date](https://img.shields.io/github/release-date/Adrinlol/landy-react-template)
-![Landy React TemplateStars](https://img.shields.io/github/stars/Adrinlol/landy-react-template)
-![Landy React Template Language](https://img.shields.io/github/languages/top/Adrinlol/landy-react-template)
-![Landy React Template TypeScript](https://badgen.net/npm/types/tslib)
-
 ## Free React landing page template
 
-[Landy][Landy] is an open-source React landing page template written in TypeScript, designed for developers and startups, who want to create a quick and professional landing page for their business or project.
+`My portfolio` is an open-source React landing page template written in TypeScript. A product of `Landy`, `Git Rest API endpoint` and `Faztar`.
 
-This React template comes with multi-lingual support, smooth animations, set of ready to use sections and most importantly, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in React.js.
 
 ## Table of contents
 
@@ -80,22 +71,26 @@ You’ll need to have Node 10.16.0 or later version on your local development ma
 
 To create a new app, you have to:
 
-Begin by cloning this repository to establish your own local copy. This process is straightforward and ensures you have all the necessary files and resources at your fingertips. You can find step-by-step instructions in this helpful article: Cloning a [repository on GitHub.com](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
+Begin by 
+1. Fork the repo
+2. Clone this repository to establish your own local copy. This process is straightforward and ensures you have all the necessary files and resources at your fingertips. You can find step-by-step instructions in this helpful article: Cloning a [repository on GitHub.com](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
+3. Run the app using the command `npm i` followed by `npm start`
 
 ## What's included
 
 - [antd][antd] - React UI library that contains a set of high quality components.
+- `react materialui` - React UI library that contains a set of high quality components.
 - [react-awesome-reveal][react-awesome-reveal] - High performance library that adds reveal animations using the Intersection Observer API.
 - [styled-componets][styled-componets] - Variant on “CSS-in-JS”—which solves many of the problems with traditional CSS.
 - [i18next][i18next] - Internationalization-framework written in and for JavaScript.
 
 ## Special thanks
 
-[whoooa][whoooa] - Use fantastic, handmade illustrations with easily changeable colors and different styles.
+[whoooa][whoooa] - Thanks to `Adrinlolx` for making available such a nice useful template [Landy](https://github.com/Adrinlol/landy-react-template).
 
 ## Usage
 
-Use it for whatever you want, and be sure to reach out to me on [Twitter](https://twitter.com/Adrinlolx) if you have any questions, or build something cool with it.
+You can re-use this for whatever you want, and be sure to reach out to Adrinlolx on [Twitter](https://twitter.com/Adrinlolx) if you have any questions, or build something cool with it.
 
 ## License
 
