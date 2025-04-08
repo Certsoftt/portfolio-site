@@ -1,15 +1,75 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Core Skills :)",
+  "text": "Inspired To be Innovative • Maximize Productivity • And Profitability.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "• CMS proficiency",
+      "content": "WordPress",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "• CRM",
+      "content": "Zoho",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Automation/Testing Tool",
+      "content": "N8N, TypeForm, Git Actions(CI/CD)",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Design Library/Framework",
+      "content": "Styled Components, React MaterialUI, Ant Design ",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Cloud Technologies",
+      "content": "Firebase, ArgoCD, NocoDB, Azure",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Programming Languages",
+      "content": "C++, PHP, Solidity, JavaScript, TypeScript, Python",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Web & Mobile Development",
+      "content": "Truffle, React, NextJS, ExpressJS, Restful API, React Native, Laravel",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Database Management",
+      "content": "Firebase, FireStore, PostgreSQL, MySQL, NocoDB",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Microservices & APIs",
+      "content": "Web API",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Software Architecture",
+      "content": "SOLID Principle, MVC, design patterns, scalable solutions",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Version Control",
+      "content": "Git",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Static Code Analysis Tool",
+      "content": "ESLint, Prettier, ESLint-Stylistic",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Software Management",
+      "content": "e2e SDLC, Project Management",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "• Software Testing Frameworks/Libraries",
+      "content": "Jest, Cypress, Pest, RTL",
       "icon": "notes.svg"
     }
   ]
