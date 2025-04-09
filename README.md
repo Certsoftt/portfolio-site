@@ -62,7 +62,8 @@ Checks for best practices to ensure your site is discoverable.
 
 ## Demo
 
-Check the live demo here 👉️ https://landy-web.netlify.app/
+Check the landy demo here 👉️ https://landy-web.netlify.app/
+Check the faztar demo here 👉️ https://faztar-4qwnruj3y-make-mores-projects.vercel.app/
 
 
 ### Installation
