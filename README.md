@@ -1,6 +1,8 @@
-## Free React landing page template
+## Portfolio landing page template
 
 `My portfolio` is an open-source React landing page template written in TypeScript. A product of `Landy`, `Git Rest API endpoint` and `Faztar`.
+
+live 👉️: [my portfolio-site](https://portfolio-site-cyan-chi-53.vercel.app/)
 
 
 ## Table of contents
