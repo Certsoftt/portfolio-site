@@ -35,12 +35,21 @@ const Experience = ({ t }: { t: TFunction }) => {
                             {skill.sectionOne.map(sectionone=>
                               <React.Fragment key={sectionone.id}>
                                 <Stack direction="row" justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
-                                    <Chip label={`Experience`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
-                                    <Typography component="p">  {t(`${sectionone.Experience}`)} </Typography>
-                                  </Stack>
-                                  <Stack direction="row" key={sectionone.id} justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
-                                  <Chip label={`Organization`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
+                                  <Chip label={`Experience`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
                                   <Typography component="p">  {t(`${sectionone.Experience}`)} </Typography>
+                                </Stack>
+                                <Stack direction="row" justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
+                                  <Chip label={`Organization`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
+                                  {sectionone.Organization.map(org=>
+                                  {Object.entries(org).map(item=>
+                                    <Typography component="p">
+                                      <a href={`${item[1]}`}>{t(`${item[0]}`)}</a>
+                                    </Typography>
+                                  )})}
+                                </Stack>
+                                <Stack direction="row" justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
+                                  <Chip label={`Position`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
+                                  <Typography component="p">  {t(`${sectionone.Position}`)} </Typography>
                                 </Stack>
                               </React.Fragment>
                               )
@@ -48,19 +57,26 @@ const Experience = ({ t }: { t: TFunction }) => {
                           </Stack>
                           <Stack direction="column" spacing={2}>
                             {skill.sectionTwo.map(sectiontwo=>{
-                              Object.keys(sectiontwo).map(sectiontwo_key=>
-                                <Stack direction="row" key={sectiontwo.id} justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
-                                  <Chip label={`${sectiontwo_key}`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
-                                  {typeof sectiontwo[sectiontwo_key] != "object"
-                                  ? <Typography component="p">  {t(`${sectiontwo[sectiontwo_key]}`)} </Typography>
-                                  : sectiontwo[sectiontwo_key].map(sectiontwo_project=>{
-                                    Object.keys(sectiontwo_project).map(sectiontwo_project_key=>
-                                      <Typography component="p"><a href={`${sectiontwo_project[sectiontwo_project_key]}`}>{t(`${sectiontwo_project_key}`)}</a></Typography>
-                                    )
-                                  })
-                                  }
+                              <React.Fragment key={sectiontwo.id}>
+                                <Stack direction="row" justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
+                                  <Chip label={`Organization`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
+                                  {sectiontwo.Project.map(org=>
+                                  {Object.entries(org).map(item=>
+                                    <Typography component="p">
+                                      <a href={`${item[1]}`}>{t(`${item[0]}`)}</a>
+                                    </Typography>
+                                  )})}
                                 </Stack>
-                            )})}
+                                <Stack direction="row" justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
+                                  <Chip label={`Experience`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
+                                  <Typography component="p">  {t(`${sectiontwo.Goal}`)} </Typography>
+                                </Stack>
+                                <Stack direction="row" justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
+                                  <Chip label={`Position`} variant="outlined" sx={{color:"CaptionText", backgroundColor:"slategray"}}/>
+                                  <Typography component="p">  {t(`${sectiontwo.JobType}`)} </Typography>
+                                </Stack>
+                              </React.Fragment>
+                            })}
                           </Stack>
                         </Stack>
                       </PaperContainer>
