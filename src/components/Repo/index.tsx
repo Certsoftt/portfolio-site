@@ -6,11 +6,10 @@ import {StarBorder, GitHub} from "@mui/icons-material";
 import { Slide } from "react-awesome-reveal";
 import {withTranslation, TFunction } from 'react-i18next';
 import { RepoDataStructure } from './type';
-import { DivContainer, PaperContainer } from './styles'
-
+import { DivContainer, PaperContainer } from './styles' 
 
 const Repo = ({ t }: { t: TFunction }) => {
-  const [repos, setRepos] = useState<RepoDataStructure | []>([]);
+  const [repos, setRepos] = useState<RepoDataStructure | string[]>([]);
   useEffect(()=>{
     fetchRepos()
   },[])
