@@ -1,15 +1,9 @@
 import React from "react"
 export type Skill = Array<{
     title: string;
-    sectionOne:Array<{
+    section:Array<{
         id: string;
-        Organization: {}[];
-        Experience:string;
-        Position:string;
-    }>;
-    sectionTwo:Array<{
-        id: string;
-        Project:{}[];
+        Project:string[][];
         Goal:string;
         JobType:string
     }>;
