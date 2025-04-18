@@ -15,7 +15,7 @@ const Repo = ({ t, id }:RepoProps) => {
     fetchRepos()
   },[])
   const fetchRepos = async ()=>{
-    const response = await fetch('https://api.github.com/users/certsoftt/repos/?language=Typescript')
+    const response = await fetch('https://api.github.com/users/certsoftt/repos/?language=TypeScript')
     const data = response.json()
 
     data.then((result:RepoDataStructure)=>{

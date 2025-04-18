@@ -23,7 +23,6 @@ const Router = () => {
           );
         })}
       </Switch>
-      <Repo/>
       <Footer />
     </Suspense>
   );
