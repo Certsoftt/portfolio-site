@@ -4,11 +4,11 @@ import {Row, Col} from "antd"
 import {Stack, Badge, Typography} from "@mui/material";
 import {StarBorder, GitHub} from "@mui/icons-material";
 import { Slide } from "react-awesome-reveal";
-import {withTranslation, TFunction } from 'react-i18next';
-import { RepoDataStructure } from './type';
+import {withTranslation} from 'react-i18next';
+import { RepoDataStructure, RepoProps } from './type';
 import { DivContainer, PaperContainer } from './styles' 
 
-const Repo = ({ t }: { t: TFunction }) => {
+const Repo = ({ t, id }:RepoProps) => {
   const [repos, setRepos] = useState<RepoDataStructure | null>(null);
   useEffect(()=>{
     fetchRepos()
@@ -24,7 +24,7 @@ const Repo = ({ t }: { t: TFunction }) => {
   return (
     <React.Fragment>
       <Container>
-        <Typography component="h3" variant="h3">My Repositries</Typography>
+        <Typography component="h3" variant="h3" id={id}>My Repositries</Typography>
         <hr/>
         <Stack spacing={2} direction="row" sx={{marginBottom:"25px"}}>
           <Slide direction="up" triggerOnce>
