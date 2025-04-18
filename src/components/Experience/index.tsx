@@ -44,8 +44,6 @@ const Experience = ({ t }: { t: TFunction }) => {
                         <Chip label={`Skill`} variant="outlined" sx={{color:"white", backgroundColor:"#2e186a"}}/>
                         <Typography component="p"> {t(`${displayskill.content}`)}</Typography>
                         </Stack>
-                        {/* <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}> */}
-                          {/* <Col xs={24} sm={24} md={12} lg={12} xl={12}> */}
                             {displayskill.section.map(section=>
                               <React.Fragment key={section.id}>
                                 <Stack direction="row" justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
@@ -57,8 +55,6 @@ const Experience = ({ t }: { t: TFunction }) => {
                               </React.Fragment>
                               )
                             }
-                          {/* </Col> */}
-                        {/* </Row> */}
                       </PaperContainer>
                     </DivContainer>
                   </Col>
@@ -68,9 +64,6 @@ const Experience = ({ t }: { t: TFunction }) => {
           </Slide>
         </Stack>
         <Stack direction="row" justifyContent="center" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
-                {/* {clicked && <LoadingButton type="button" variant="outlined" loading={clicked} loadingPosition="center"
-                sx={{backgroundImage: "linear-gradient(163deg, #a00000fa 0%, #d10050 100%) !important"}}/>}
-                {(skill.length != displayedSkill.length && !clicked) && <Button type="button" disabled={clicked} variant="contained" onClick={loadMore}>Load More</Button>} */}
           <Button type="button" variant="contained" onClick={loadMore} disabled={clicked} fullWidth sx={{backgroundColor:"#2e186a"}}>Load More</Button>
         </Stack>
       </Container>
