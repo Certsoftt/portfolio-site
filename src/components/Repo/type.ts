@@ -1,3 +1,4 @@
+import {TFunction } from 'react-i18next';
 export type RepoDataStructure = {   
     allow_forking?:true
     archive_url?:string
@@ -99,3 +100,8 @@ export type RepoDataStructure = {
     watchers_count?: number
     web_commit_signoff_required?: boolean
     }[]
+
+    export type RepoProps = {
+        t: TFunction;
+        id: string;
+    }
