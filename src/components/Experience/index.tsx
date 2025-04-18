@@ -2,15 +2,14 @@ import React, {useState, useEffect} from 'react'
 import Container from "../../common/Container"
 import {Row, Col} from "antd"
 import {Stack, IconButton, Typography, Chip, Button} from "@mui/material";
-// import {LoadingButton} from '@mui/lab'
 import { Slide } from "react-awesome-reveal";
-import {withTranslation, TFunction } from 'react-i18next';
+import {withTranslation} from 'react-i18next';
 import { DivContainer, PaperContainer } from '../Repo/styles'
 import {skills} from './skills' 
 import {fullload} from './fullload' 
-import { Skill } from './type';
+import { ExperienceProps, Skill } from './type';
 
-const Experience = ({ t }: { t: TFunction }) => {
+const Experience = ({ t, id}:ExperienceProps) => {
   const [skill, setSkill] = useState<Skill | null>(null)
   const [clicked, setClicked] = useState(false)
   useEffect(()=>{
@@ -23,7 +22,7 @@ const Experience = ({ t }: { t: TFunction }) => {
   return (
     <React.Fragment>
       <Container>
-        <Typography component="h3" variant="h3">4 years In The Industry</Typography>
+        <Typography component="h3" variant="h3" id={id}>4 years In The Industry</Typography>
         <hr/>
         <Stack spacing={2} direction="row" sx={{marginBottom:"25px"}}>
           <Slide direction="up" triggerOnce>
@@ -38,12 +37,14 @@ const Experience = ({ t }: { t: TFunction }) => {
                             <displayskill.icon/>
                           </IconButton>
                           <Typography component="h6">{t(`${displayskill.title}`)}</Typography>
-                          <Chip label={`${displayskill.section[0].JobType}`} variant="outlined" sx={{color:"white", backgroundColor:"rgb(255, 130, 92)"}}/>
+                          <Chip label={`${displayskill.section[0].JobType}`} variant="outlined" sx={{color:"white", backgroundColor:"rgb(243, 145, 115)"}}/>
                         </Stack>
                         <Stack direction="row" justifyContent="normal" spacing={1} alignItems="center" sx={{marginBottom:"10px"}}>
                         <Chip label={`Skill`} variant="outlined" sx={{color:"white", backgroundColor:"#2e186a"}}/>
                         <Typography component="p"> {t(`${displayskill.content}`)}</Typography>
                         </Stack>
+                        {/* <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}> */}
+                          {/* <Col xs={24} sm={24} md={12} lg={12} xl={12}> */}
                             {displayskill.section.map(section=>
                               <React.Fragment key={section.id}>
                                 <Stack direction="row" justifyContent="normal" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
@@ -55,6 +56,8 @@ const Experience = ({ t }: { t: TFunction }) => {
                               </React.Fragment>
                               )
                             }
+                          {/* </Col> */}
+                        {/* </Row> */}
                       </PaperContainer>
                     </DivContainer>
                   </Col>

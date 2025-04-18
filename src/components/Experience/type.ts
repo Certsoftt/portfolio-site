@@ -1,4 +1,5 @@
 import React from "react"
+import {TFunction } from 'react-i18next';
 export type Skill = Array<{
     title: string;
     section:Array<{
@@ -10,3 +11,8 @@ export type Skill = Array<{
     content: string;
     icon: React.ComponentType;
 }>
+
+export type ExperienceProps = {
+    id: string;
+    t: TFunction
+}
