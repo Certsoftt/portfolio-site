@@ -9,7 +9,7 @@ import { RepoDataStructure } from './type';
 import { DivContainer, PaperContainer } from './styles' 
 
 const Repo = ({ t }: { t: TFunction }) => {
-  const [repos, setRepos] = useState<RepoDataStructure | string[]>([]);
+  const [repos, setRepos] = useState<RepoDataStructure | null>(null);
   useEffect(()=>{
     fetchRepos()
   },[])
@@ -30,7 +30,7 @@ const Repo = ({ t }: { t: TFunction }) => {
           <Slide direction="up" triggerOnce>
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
               {
-                repos.map(repo=>
+                repos?.map(repo=>
                   <Col xs={24} sm={24} md={12} lg={8} xl={8} key={repo.node_id}>
                     <DivContainer>
                       <PaperContainer elevation={4}>
