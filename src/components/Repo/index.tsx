@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Container from "../../common/Container"
 import {Row, Col} from "antd"
-import {Stack, Badge, Typography} from "@mui/material";
+import {Stack, Badge, Typography, Button} from "@mui/material";
 import {StarBorder, GitHub} from "@mui/icons-material";
 import { Slide } from "react-awesome-reveal";
 import {withTranslation} from 'react-i18next';
@@ -10,17 +10,27 @@ import { DivContainer, PaperContainer } from './styles'
 
 const Repo = ({ t, id }:RepoProps) => {
   const [repos, setRepos] = useState<RepoDataStructure | null>(null);
+  const [clicked, setClicked] = useState(false)
   useEffect(()=>{
     fetchRepos()
   },[])
   const fetchRepos = async ()=>{
+    const response = await fetch('https://api.github.com/users/certsoftt/repos/?language=Typescript')
+    const data = response.json()
+
+    data.then((result:RepoDataStructure)=>{
+        setRepos(result)
+    })
+  }
+  const loadMore = async ()=>{
+    setClicked(true)
     const response = await fetch('https://api.github.com/users/certsoftt/repos')
     const data = response.json()
 
     data.then((result:RepoDataStructure)=>{
         setRepos(result)
     })
-  } 
+    } 
   return (
     <React.Fragment>
       <Container>
@@ -51,6 +61,9 @@ const Repo = ({ t, id }:RepoProps) => {
               }
             </Row>
           </Slide>
+        </Stack>
+        <Stack direction="row" justifyContent="center" alignItems="center" spacing={2} sx={{marginBottom:"10px"}}>
+          <Button type="button" variant="contained" onClick={loadMore} disabled={clicked} fullWidth sx={{backgroundColor:"#2e186a"}}>Load More</Button>
         </Stack>
       </Container>
     </React.Fragment>
