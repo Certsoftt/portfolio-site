@@ -8,6 +8,7 @@ import ContactContent from "../../content/ContactContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const Experience = lazy(() => import("../../components/Experience"));
+const Repo = lazy(() => import("../../components/Repo"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -30,14 +31,14 @@ const Home = () => {
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
       />
-      <Experience/>
+      <Experience id="experience"/>
       <ContentBlock
         direction="left"
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
         icon="me.jpg"
-        id="about"
+        id="core_skill"
       />
       <ContentBlock
         direction="right"
@@ -53,6 +54,7 @@ const Home = () => {
         icon="waving.svg"
         id="product"
       />
+      <Repo id="repo"/>
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
