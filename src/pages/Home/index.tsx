@@ -40,20 +40,20 @@ const Home = () => {
         icon="me.jpg"
         id="core_skill"
       />
-      <ContentBlock
+      {/* <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
         icon="product-launch.svg"
         id="mission"
-      />
-      <ContentBlock
+      /> */}
+      {/* <ContentBlock
         direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
         icon="waving.svg"
         id="product"
-      />
+      /> */}
       <Repo id="repo"/>
       <Contact
         title={ContactContent.title}
