@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Container from "../../common/Container"
-import {Row, Col} from "antd"
+import {Row} from "antd"
 import {Stack, Badge, Typography, Button} from "@mui/material";
 import {StarBorder, GitHub} from "@mui/icons-material";
 import { Slide } from "react-awesome-reveal";
