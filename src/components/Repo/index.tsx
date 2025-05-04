@@ -6,7 +6,7 @@ import {StarBorder, GitHub} from "@mui/icons-material";
 import { Slide } from "react-awesome-reveal";
 import {withTranslation} from 'react-i18next';
 import { RepoDataStructure, RepoProps } from './type';
-import { DivContainer, PaperContainer } from './styles' 
+import Card from '../../common/Card';
 
 const Repo = ({ t, id }:RepoProps) => {
   const [repos, setRepos] = useState<RepoDataStructure | null>(null);
@@ -15,10 +15,10 @@ const Repo = ({ t, id }:RepoProps) => {
     fetchRepos()
   },[])
   const fetchRepos = async ()=>{
-    const response = await fetch('https://api.github.com/users/certsoftt/repos/?language=TypeScript')
+    const response = await fetch('https://api.github.com/users/certsoftt/repos')
     const data = response.json()
 
-    data.then((result:RepoDataStructure)=>{
+    data.then((result)=>{
         setRepos(result)
     })
   }
@@ -27,7 +27,7 @@ const Repo = ({ t, id }:RepoProps) => {
     const response = await fetch('https://api.github.com/users/certsoftt/repos')
     const data = response.json()
 
-    data.then((result:RepoDataStructure)=>{
+    data.then((result)=>{
         setRepos(result)
     })
     } 
@@ -41,22 +41,18 @@ const Repo = ({ t, id }:RepoProps) => {
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
               {
                 repos?.map(repo=>
-                  <Col xs={24} sm={24} md={12} lg={8} xl={8} key={repo.node_id}>
-                    <DivContainer>
-                      <PaperContainer elevation={4}>
-                        <Stack direction="row" justifyContent="space-between" alignItems="center">
-                          <Badge variant="dot">
-                            <GitHub sx={{fontSize: "small"}}/>
-                          </Badge>
-                          <span> {t(`${repo.name}`)}</span>
-                          <span> ({t(`${repo.default_branch}`)})</span>
-                        </Stack>
-                        <Typography component="p" gutterBottom><a href={repo.clone_url}>{t(`${repo.full_name}`)}</a></Typography>
-                        <Typography component="p" gutterBottom>{t(`${repo.description?.slice(0,50)}....`)}</Typography>
-                          <StarBorder sx={{fontSize:"small"}}/> {t(`${repo.stargazers_count}`)} ({t(`${repo.language}`)})
-                      </PaperContainer>
-                    </DivContainer>
-                  </Col>
+                  <Card xs={24} sm={24} md={12} lg={8} xl={8} key={repo.node_id}>
+                    <Stack direction="row" justifyContent="space-between" alignItems="center">
+                      <Badge variant="dot">
+                        <GitHub sx={{fontSize: "small"}}/>
+                      </Badge>
+                      <span> {t(`${repo.name}`)}</span>
+                      <span> ({t(`${repo.default_branch}`)})</span>
+                    </Stack>
+                    <Typography component="p" gutterBottom><a href={repo.clone_url}>{t(`${repo.full_name}`)}</a></Typography>
+                    <Typography component="p" gutterBottom>{t(`${repo.description?.slice(0,50)}....`)}</Typography>
+                      <StarBorder sx={{fontSize:"small"}}/> {t(`${repo.stargazers_count}`)} ({t(`${repo.language}`)})
+                  </Card>
                 )
               }
             </Row>
