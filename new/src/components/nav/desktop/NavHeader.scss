@@ -1,0 +1,104 @@
+@import "/src/styles/extend";
+
+header.nav-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .img-view-avatar {
+        border: 6px solid var(--theme-nav-light);
+        border-radius: calc($standard-border-radius * 2);
+
+        width: 140px;
+        height: 140px;
+    }
+
+    .status-badge {
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 50px;
+    }
+
+    .name {
+        font-size: 1.25rem!important;
+        @include media-breakpoint-down($sidebar-min-breakpoint) {
+            font-size: 1.5rem!important;
+        }
+    }
+
+    .role {
+        color: var(--theme-nav-secondary);
+        font-weight: bold;
+        font-size: 0.95rem;
+        opacity: 0.6;
+    }
+
+    .name, .role {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-view-logo {
+        width: 32px;
+        height: 24px;
+    }
+
+    @media (max-height:690px) {
+        @include media-breakpoint-up(lg) {
+            .img-view-avatar {
+                width: 130px;
+                height: 130px;
+            }
+
+            .status-badge {
+                margin-left: 110px;
+                margin-top: 50px;
+            }
+
+            .info {
+                margin-top: 12px !important;
+                padding-top: 0 !important;
+            }
+        }
+    }
+
+    @media (max-height:600px) {
+        @include media-breakpoint-up(lg) {
+            .img-view-avatar {
+                width: 120px;
+                height: 120px;
+            }
+
+            .status-badge {
+                margin-left: 100px;
+                margin-top: 40px;
+            }
+
+            .info {
+                margin-top: 10px !important;
+                padding-top: 0 !important;
+            }
+        }
+    }
+
+    &-shrink {
+        .info {
+            display: none;
+        }
+
+        .status-badge {
+            margin-left: 65px;
+            margin-top: 65px;
+        }
+
+        .img-view-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: calc($standard-border-radius * 2);
+            border-width: 3px;
+        }
+    }
+}

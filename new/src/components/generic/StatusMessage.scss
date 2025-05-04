@@ -1,0 +1,17 @@
+@import "/src/styles/extend";
+
+.status-message {
+    .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        min-height: 320px;
+        margin: 0 30px;
+        @include media-breakpoint-down(lg) {
+            min-height: 0;
+            margin: 20px 10px;
+        }
+    }
+}

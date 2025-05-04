@@ -1,0 +1,17 @@
+@import "/src/styles/extend";
+
+.box, .box-opacity {
+    background-color: var(--theme-section-background);
+    box-shadow: var(--theme-box-shadow);
+}
+
+.box-opacity {
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        background-color: var(--theme-section-background-opacity);
+    }
+}
+
+.box-nav {
+    background-color: var(--theme-nav-background);
+    color: var(--theme-nav-secondary);
+}

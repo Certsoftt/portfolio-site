@@ -1,0 +1,32 @@
+@import "/src/styles/extend";
+
+div.pagination-tools {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn-pagination-control {
+    .fa-icon-wrapper {
+        user-select: none;
+        pointer-events: none;
+    }
+}
+
+button.btn-target-page {
+    span {
+        user-select: none;
+        pointer-events: none;
+    }
+}
+
+button.btn-target-page, button.btn-pagination-control {
+    margin: 0 0.2rem;
+    width: 35px;
+    @include media-breakpoint-down(md) {
+        margin: 0 0.1rem;
+        width: 30px;
+    }
+    border: none !important;
+    transition: none;
+}

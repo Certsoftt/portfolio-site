@@ -1,0 +1,57 @@
+@import "/src/styles/extend";
+
+.border-wrap {
+    --default-size: 70px;
+    --padding: 2rem;
+    --border-color: var(--theme-highlight);
+    @include media-breakpoint-down(xl) {
+        --padding: 1.5rem;
+    }
+    @include media-breakpoint-down(md) {
+        --padding: 1rem;
+    }
+    @media (max-width: 380px) {
+        --padding: 0.75rem;
+    }
+
+    position: relative;
+    width: 100%;
+    padding: var(--padding);
+
+    &-content {
+        padding: 20px 0 0 0;
+        overflow-x: hidden;
+    }
+
+    &-block-top, &-block-bottom {
+        display: inline-block;
+        position: absolute;
+        background: 0 0;
+        width: var(--default-size);
+        height: var(--default-size);
+        z-index: 0;
+    }
+
+    &-block-top {
+        border-top: 3px dashed var(--border-color);
+        border-left: 3px dashed var(--border-color);
+    }
+
+    &-block-bottom {
+        border-bottom: 3px dashed var(--border-color);
+        border-right: 3px dashed var(--border-color);
+        right: 0;
+        bottom: 0;
+    }
+    
+    @include media-breakpoint-down(lg) {
+        &-content {
+            padding: 10px 0;
+        }
+
+        &-block-top, &-block-bottom {
+            display: none;
+        }
+        
+    }
+}

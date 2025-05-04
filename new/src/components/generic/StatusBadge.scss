@@ -1,0 +1,85 @@
+@import "/src/styles/extend";
+
+.status-badge {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.status-circle {
+    background-color: var(--theme-white);
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 2;
+    user-select: none;
+    pointer-events: none;
+
+    &-pulse {
+        background-color: var(--theme-white);
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        animation: pulse 1s infinite;
+        z-index: 1;
+        user-select: none;
+        pointer-events: none;
+    }
+}
+
+.status-circle-active {
+    background-color: var(--theme-highlight)!important;
+    border: 2px solid var(--theme-dark-opacity);
+    &-pulse {
+        background-color: var(--theme-highlight-3)!important;
+    }
+}
+
+.status-circle-inactive {
+    background-color: var(--theme-nav-background)!important;
+    border: 2px solid rgba($secondary, 0.3);
+    &-pulse {
+        display: none;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+    }
+}
+
+.status-badge {
+    .custom-tooltip {
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, calc(-100% - 5px));
+    }
+}
+
+.status-badge-sm {
+    .status-circle {
+        width: 12px;
+        height: 12px;
+
+        &-pulse {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .custom-tooltip {
+        width: 185px;
+    }
+}

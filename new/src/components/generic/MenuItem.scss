@@ -1,0 +1,117 @@
+@import "/src/styles/extend";
+
+.menu-item {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    border-right: 4px solid transparent;
+
+    height: 50px;
+    @media (max-height: 725px) { height: 45px; }
+    @media (max-height: 690px) { height: 40px; }
+    @media (max-height: 645px) { height: 35px; }
+
+    .menu-item-icon-wrapper {
+        pointer-events: none;
+
+        .fa-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: scale 0.1s ease-out;
+        }
+
+        img {
+            border: 2px solid rgba(black, 0.05);
+            border-radius: 100%;
+        }
+
+        .fa-icon {
+            opacity: 0.3;
+        }
+    }
+
+    @mixin menu-item-icon-wrapper($width, $height, $font-size) {
+        .fa-icon {
+            width: $width;
+            height: $height;
+            font-size: $font-size;
+        }
+
+        img {
+            width: calc($width * 1.2);
+            height: calc($height * 1.2);
+        }
+    }
+
+    .menu-item-icon-wrapper-1 {
+        @include menu-item-icon-wrapper(20px, 20px, 18px);
+    }
+
+    .menu-item-icon-wrapper-2 {
+        @include menu-item-icon-wrapper(22px, 22px, 22px);
+    }
+
+    span.menu-item-label {
+        pointer-events: none;
+        font-family: $custom-subheadings-font-family;
+        font-size: 0.95rem;
+        font-weight: bold;
+        margin-top: 1px;
+        opacity: 0.75;
+    }
+
+    .fa-icon {
+        pointer-events: none;
+    }
+}
+
+.menu-item-with-hover {
+    &:hover {
+        color: var(--theme-highlight);
+
+        .fa-icon, img {
+            scale: 1.1;
+            opacity: 1;
+        }
+
+        span.menu-item-label {
+            opacity: 1;
+        }
+    }
+}
+
+.menu-item-selected {
+    background-color: var(--theme-nav-selected)!important;
+    color: var(--theme-nav-highlight)!important;
+    border-right-color: var(--theme-nav-highlight);
+
+    .fa-icon, img {
+        opacity: 1!important;
+    }
+
+    span.menu-item-label {
+        opacity: 1;
+    }
+
+    &:hover {
+        background-color: var(--theme-nav-selected)!important;
+        color: var(--theme-nav-highlight)!important;
+        .fa-icon, img {
+            scale: 1;
+        }
+    }
+}
+
+.menu-item-compressed {
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    @media (max-height: 690px) { height: 50px; }
+    @media (max-height: 645px) { height: 45px; }
+    @media (max-height: 590px) { height: 40px; }
+
+    .menu-item-label {
+        display: none;
+    }
+}

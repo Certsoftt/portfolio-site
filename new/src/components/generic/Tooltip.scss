@@ -1,0 +1,42 @@
+@import "/src/styles/extend";
+
+.custom-tooltip {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    pointer-events: none;
+
+    padding: 0.2rem 1rem;
+
+    background-color: var(--theme-tag-color);
+    font-weight: bold;
+    color: var(--theme-secondary);
+
+    font-family: $custom-subheadings-font-family;
+    font-size: 0.9rem;
+    border-radius: $standard-border-radius;
+    border: 2px solid var(--theme-soft-2);
+
+    transition: 0.1s opacity ease-out;
+    z-index: $z-index-animated-cursor;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: calc(100%);
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--theme-soft-3) transparent transparent transparent;
+    }
+
+    &-hidden {
+        opacity: 0;
+        &::before {
+            display: none;
+        }
+    }
+}

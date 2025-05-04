@@ -1,0 +1,57 @@
+@import "/src/styles/extend";
+
+.custom-scrollable {
+    --scrollbar-width:32px;
+    --scrollbar-thumb-width:4px;
+    --scrollbar-thumb-offset: calc(var(--scrollbar-width) - var(--scrollbar-thumb-width));
+    --scrollbar-track-width: 4px;
+    --scrollbar-track-offset: calc(var(--scrollbar-track-width) - var(--scrollbar-track-width));
+
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+
+    .scrollbar-thumb-x, .scrollbar-track-x {
+        display: none!important;
+    }
+
+    .scrollbar-track-y {
+        width: var(--scrollbar-width);
+        background-color: transparent;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: var(--theme-scrollbar-track);
+        height: 100%;
+        width: var(--scrollbar-track-width);
+        top: 0;
+        right: var(--scrollbar-track-offset);
+    }
+
+    .scrollbar-thumb {
+        position: relative;
+        width: var(--scrollbar-width);
+        background-color: transparent;
+        border-radius: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: var(--theme-scrollbar-thumb);
+            opacity: 1;
+            height: 100%;
+            width: var(--scrollbar-thumb-width);
+            top: 0;
+            left: var(--scrollbar-thumb-offset);
+        }
+    }
+}
+
+.custom-scrollable-disabled {
+    &:before {
+        display: none;
+    }
+}

@@ -1,0 +1,18 @@
+@import "/src/styles/extend";
+
+.info-badge {
+    display: inline-block;
+    background-color: var(--theme-tag-color);
+    padding: 0.4rem 1rem;
+    border-radius: $standard-border-radius;
+    color: var(--theme-secondary-3);
+    font-family: $custom-subheadings-font-family;
+    font-weight: bold;
+    min-width: 220px;
+    text-align: center;
+
+    @include media-breakpoint-down(xl) {
+        padding: 0.25rem 0.9rem;
+        min-width: 0;
+    }
+}

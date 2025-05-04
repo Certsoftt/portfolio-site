@@ -1,0 +1,125 @@
+/** Form fields - Layout **/
+.input-group {
+    &-list {
+        margin-bottom: 1.1rem;
+        @include media-breakpoint-down(xl) {
+            margin-bottom: 0.9rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 0.7rem;
+        }
+    }
+
+    .input-group-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $standard-border-radius;
+        overflow: hidden;
+        min-width: 65px;
+        @include media-breakpoint-down(lg) {
+            min-width: 55px;
+        }
+    }
+
+    input, textarea {
+        padding: 1rem;
+    }
+
+    input {
+        height: 65px;
+        @include media-breakpoint-down(xl) {
+            height: 55px;
+        }
+        @include media-breakpoint-down(sm) {
+            height: min(8vh, 50px);
+        }
+    }
+
+    textarea {
+        height: 100%;
+        flex-grow: 1;
+        min-height: 230px;
+        @include media-breakpoint-down(lg) {
+            min-height: 25vh;
+        }
+    }
+}
+
+/** Form fields - Colors **/
+.input-group {
+    --placeholder-color: var(--theme-muted);
+
+    .input-group-text {
+        background-color: var(--theme-nav-selected);
+        color: var(--theme-white);
+        border: 0 transparent;
+
+        &-focused {
+            background-color: var(--theme-highlight-2)!important;
+            color: var(--theme-dark)!important;
+        }
+    }
+
+    input, textarea {
+        background-color: var(--theme-dark);
+        color: var(--theme-secondary);
+        opacity: 0.8;
+        border: 2px solid rgba($secondary, 0.1);
+        transition: none;
+
+        &:focus {
+            background-color: var(--theme-dark);
+            color: var(--theme-highlight-2);
+            opacity: 1;
+            outline: none;
+            box-shadow: none;
+            border: 2px solid var(--theme-highlight-2)!important;
+        }
+    }
+
+    input {
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active{
+            -webkit-box-shadow: 0 0 0 0 transparent inset !important;
+            -webkit-text-fill-color: var(--theme-secondary) !important;
+            color: $secondary !important;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        &:-webkit-autofill:focus {
+            border-color: var(--border-color);
+        }
+    }
+
+    /** Placeholders **/
+    ::-webkit-input-placeholder {
+        --font-size: 1rem;
+        @include media-breakpoint-down(lg) {
+            --font-size: 0.9rem;
+        }
+
+        font-size: var(--font-size);
+        color: var(--placeholder-color);
+    }
+    *:-moz-placeholder {
+        color: var(--placeholder-color)!important;
+        opacity: 1;
+    }
+    *::-moz-placeholder {
+        color:var(--placeholder-color)!important;
+        opacity: 1;
+    }
+    *:-ms-input-placeholder {
+        color: var(--placeholder-color)!important;
+    }
+    *::-ms-input-placeholder {
+        color: var(--placeholder-color)!important;
+    }
+    *::placeholder {
+        color: var(--placeholder-color)!important;
+    }
+}

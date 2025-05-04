@@ -1,0 +1,37 @@
+@import "/src/styles/extend";
+
+.filter-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $custom-subheadings-font-family;
+
+    .btn-group {
+        min-width: min(100%, 650px);
+    }
+
+    .btn {
+        font-weight: bold;
+        padding: 0.3rem 2rem;
+        opacity: 0.8;
+        border-radius: $standard-border-radius;
+        transition: none;
+
+        @include media-breakpoint-down(sm) {
+            padding: 0.7rem 0;
+        }
+
+        span {
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+
+    .btn-selected {
+        opacity: 1;
+        background-color: var(--theme-highlight)!important;
+        color: var(--theme-dark) !important;
+        user-select: none;
+        pointer-events: none;
+    }
+}

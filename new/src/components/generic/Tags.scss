@@ -1,0 +1,33 @@
+@import "/src/styles/extend";
+
+.tags {
+    .badge {
+        background-color: var(--theme-tag-color);
+        color: var(--theme-secondary);
+        font-family: $custom-subheadings-font-family;
+        border-radius: $standard-border-radius;
+        padding: 0.5rem 1rem;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+            margin-bottom: 5px;
+            @include media-breakpoint-down(md) {
+                margin-right: 3px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+    .badge-xs {
+        padding: 0.35rem 0.7rem;
+        border-radius: 5px;
+        &:not(:last-child) {
+            margin-right: 3px;
+            margin-bottom: 3px;
+            @include media-breakpoint-down(md) {
+                margin-right: 2px;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "/src/styles/extend";
+
+.nav-mobile-top {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    padding-top: 1rem;
+
+    @include media-breakpoint-up($sidebar-min-breakpoint) {
+        display: none;
+    }
+
+    .float-top-left {
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+
+    .float-top-right {
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+}

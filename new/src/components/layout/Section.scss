@@ -1,0 +1,93 @@
+@import "/src/styles/extend";
+
+.lead-section {
+    width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 100%;
+    overflow: hidden;
+    border-radius: $standard-border-radius;
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        border-radius: 0;
+        min-height: 100vh;
+    }
+}
+
+div.lead-section-content {
+    height: 100%;
+}
+
+.full-screen-toggle-wrapper {
+    z-index: 30;
+    position: absolute;
+
+    &-top-left {
+        top: 12px;
+        left: 12px;
+    }
+
+    &-top-right {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/** Transition Classes **/
+.section-transition-hiding {
+    z-index: $z-index-section-inactive;
+
+    transition: 0.6s opacity ease-in-out, 0.6s transform ease-in-out;
+    opacity: 0;
+    transform: translateX(-40px) scale(0.8);
+
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        transition: 0.4s opacity ease-in-out, 0.4s transform ease-in-out;
+        transform: translateX(-100vw)!important;
+    }
+}
+
+.section-transition-hidden {
+    display: none;
+    z-index: $z-index-section-inactive;
+    user-select: none;
+    pointer-events: none;
+}
+
+.section-transition-hiding, .section-transition-hidden {
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        max-height: calc(100vh - 100px)!important;
+        .custom-scrollable {
+            overflow-y: hidden;
+        }
+    }
+}
+
+.section-transition-showing {
+    z-index: $z-index-section-active;
+
+    transform: translateX(100vw);
+    transition: none;
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        transform: translateY(100vh);
+    }
+}
+
+.section-transition-shown {
+    z-index: $z-index-section-active;
+
+    transition: 0.6s transform ease-in-out;
+    transform: translateX(0);
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        transition: 0.4s transform ease-in-out;
+    }
+}
+
+.section-transition-show-without-transition {
+    z-index: $z-index-section-active;
+
+    transition: none!important;
+    transform: translateX(0);
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        transition: 0.4s transform ease-in-out;
+    }
+}

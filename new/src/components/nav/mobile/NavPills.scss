@@ -1,0 +1,53 @@
+@import "/src/styles/extend";
+
+.nav-pills {
+    width: 100%;
+    display: flex;
+}
+
+/** Default Pill **/
+.nav-pill {
+    height: 45px;
+    width: 100%;
+
+    border: 0;
+    border-top: 3px solid rgba($secondary, 0.05);
+
+    background-color: var(--theme-nav-background-disabled);
+    color: var(--theme-nav-secondary);
+
+    span {
+        margin-left: 10px;
+        font-family: $custom-subheadings-font-family;
+        font-size: 0.95rem;
+        font-weight: bold;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    span, .fa-icon {
+        opacity: 0.25;
+    }
+}
+
+/** Hovered Pill **/
+.nav-pill {
+    &:hover {
+        color: var(--theme-highlight);
+        span, .fa-icon {
+            opacity: 1;
+        }
+    }
+}
+
+/** Active Pill **/
+.nav-pill-active {
+    background-color: var(--theme-nav-selected)!important;
+    color: var(--theme-nav-highlight)!important;
+    border-top-color: var(--theme-highlight)!important;
+
+    span, .fa-icon {
+        opacity: 1!important;
+    }
+}

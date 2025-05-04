@@ -1,0 +1,78 @@
+@import "/src/styles/extend";
+
+.loader {
+    position: fixed;
+    z-index: $z-index-loader;
+    background-color: $loader-background-color;
+    width: 100%;
+    height: 125vh;
+    height: 125svh;
+    top: -12.5vh;
+    top: -12.5svh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 20px;
+
+    &-hidden {
+        top: -15.5vh;
+        opacity: 0;
+        transition: 0.3s all ease-in;
+        pointer-events: none;
+    }
+}
+
+.loader-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+    user-select: none;
+
+    .loader-content-info {
+        transition: 0.2s all ease-out;
+
+        &-hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: none;
+        }
+    }
+
+    .spinner {
+        max-width: max(120px, 30vw);
+        aspect-ratio: 1/1;
+        transition: 0.4s all ease-out;
+
+        &-hidden {
+            opacity: 0;
+            transform: translateY(-120px);
+            scale: 0;
+            transition: none;
+        }
+    }
+
+    .title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h5 {
+            margin: 0;
+        }
+
+        .logo {
+            aspect-ratio: 1/1;
+            width: 48px;
+            @include media-breakpoint-down(lg) {
+                width: 40px;
+            }
+            @include media-breakpoint-down(md) {
+                width: 32px;
+            }
+        }
+    }
+}

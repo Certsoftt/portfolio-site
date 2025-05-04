@@ -1,0 +1,21 @@
+@import "/src/styles/extend";
+
+.youtube-iframe-wrapper {
+    background-color: black;
+    display: flex;
+    border-top: 4px solid var(--theme-dark);
+    border-bottom: 4px solid var(--theme-dark);
+    @media (max-height: 600px) {
+        border-bottom: 0;
+    }
+}
+
+.youtube-iframe {
+    margin: auto;
+    width: min(calc((100vh - 200px)*1.77), 100%);
+    aspect-ratio: 16/9;
+
+    @media (max-height: 600px) {
+        width: min(calc((100vh - 200px)*2.2), 100%);
+    }
+}

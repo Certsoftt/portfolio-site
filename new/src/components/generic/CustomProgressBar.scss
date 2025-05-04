@@ -1,0 +1,11 @@
+@import "/src/styles/extend";
+
+.progress-bar {
+    @include media-breakpoint-down(lg) {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}

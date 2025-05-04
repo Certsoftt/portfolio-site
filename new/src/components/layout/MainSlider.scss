@@ -1,0 +1,28 @@
+@import "/src/styles/extend";
+
+.sections-slider {
+    --margin-x-mobile: 5px;
+    --margin-y-mobile: 5px;
+    --margin-y-desktop: 1.25rem;
+    --margin-x-desktop: 3rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin: var(--margin-y-desktop) var(--margin-x-desktop);
+    height: calc(100vh - $layout-blocks-spacing*2 - var(--margin-y-desktop)*2);
+    height: calc(100svh - $layout-blocks-spacing*2 - 2.5rem);
+
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        margin: var(--margin-y-mobile) var(--margin-x-mobile) calc($nav-tabs-height) var(--margin-x-mobile);
+        height: auto;
+        min-height: 70vh;
+    }
+}
+
+.sections-slider-offset-bottom {
+    padding-bottom: calc($nav-tabs-chrome-offset);
+    @include media-breakpoint-up($sidebar-min-breakpoint) {
+        padding-bottom: 0;
+    }
+}

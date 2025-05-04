@@ -1,0 +1,54 @@
+@import "/src/styles/extend";
+
+$circle-avatar-multipliers: (
+    (xl, 0.9),
+    (lg, 0.75),
+    (md, 0.6),
+    (sm, 0.45),
+);
+
+.circle-avatar {
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+    border: solid var(--theme-soft);
+    user-select: none;
+    pointer-events: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-soft-3);
+
+    .image-view-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@mixin create-variant($size, $scale) {
+    $dimensions: max(32px, calc((48px + ($size * 24px))*$scale));
+    width: $dimensions;
+    height: $dimensions;
+    font-size: calc($dimensions/2.3);
+    border-width: calc((4px + ($size * 2px))*$scale);
+}
+
+@for $i from 1 through 8 {
+    .circle-avatar-#{$i} {
+        @include create-variant($i - 1, 1);
+    }
+
+    .circle-avatar-dynamic-#{$i} {
+        @for $j from 1 through length($circle-avatar-multipliers) {
+            $breakpoint-pair: nth($circle-avatar-multipliers, $j);
+            $breakpoint: nth($breakpoint-pair, 1);
+            $scale: nth($breakpoint-pair, 2);
+
+            @include media-breakpoint-down($breakpoint) {
+                @include create-variant($i - 1, $scale);
+            }
+        }
+    }
+}
+

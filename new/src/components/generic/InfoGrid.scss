@@ -1,0 +1,17 @@
+@import "/src/styles/extend";
+
+.info-grid-item {
+    .card-body {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .circle-avatar {
+        border-color: var(--theme-soft-3);
+        background-color: var(--theme-tag-color);
+        @include media-breakpoint-down(md) {
+            border-width: 4px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "/src/styles/extend";
+
+.fixed-nav-pills-wrapper {
+    position: fixed;
+    top: 0;
+    left: 5px;
+    width: calc(100% - 10px);
+    z-index: $z-index-nav-tabs;
+    transition: 0.3s all ease-in-out;
+
+    &-hidden {
+        transform: translateY(-100px);
+        visibility: hidden;
+        transition: 0.2s all ease-in;
+    }
+
+    @include media-breakpoint-up($sidebar-min-breakpoint) {
+        display: none;
+    }
+
+    @media (max-height:400px) {
+        display: none;
+    }
+}

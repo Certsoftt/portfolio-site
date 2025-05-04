@@ -1,0 +1,80 @@
+@import "/src/styles/extend";
+
+.custom-modal {
+    position: fixed;
+    z-index: $z-index-modal;
+    pointer-events: auto;
+    width: 100vw;
+    height: 100vh;
+    height: 100svh;
+    background-color: rgba(black, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    @include media-breakpoint-down(lg) {
+        align-items: start;
+    }
+}
+
+.custom-modal-window {
+    min-width: 980px;
+    transition: opacity 0.2s linear, transform 0.3s ease-out;
+    @include media-breakpoint-down(lg) {
+        min-width: calc(100%);
+        margin: 2rem 0.5rem 0.5rem;
+    }
+
+    @media (max-height: 500px) {
+        margin-top: 0.5rem;
+    }
+
+    overflow: hidden;
+    .card-header, .card-footer {
+        padding: 1rem;
+        border: 0;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-body {
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .card-footer {
+        display: flex;
+        align-items: center;
+        .description {
+            margin-left: 15px;
+        }
+
+        @media (max-height: 600px) {
+            display: none;
+        }
+    }
+}
+
+.custom-modal-window-transparent {
+    width: 100vw;
+    height: calc(100vh - 20px);
+
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 99;
+    }
+}
+
+.custom-modal-window-hidden {
+    transition: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.9) translateY(200px);
+}

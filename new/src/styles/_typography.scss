@@ -1,0 +1,133 @@
+/** Headings **/
+$heading-sizes: (
+    h1: (default: 2.75rem, xl: 2.61rem, lg: 2.48rem, md: 2.34rem, sm: 1.95rem),
+    h2: (default: 2.50rem, xl: 2.38rem, lg: 2.25rem, md: 2.13rem, sm: 1.90rem),
+    h3: (default: 2.00rem, xl: 1.90rem, lg: 1.80rem, md: 1.70rem, sm: 1.55rem),
+    h4: (default: 1.50rem, xl: 1.43rem, lg: 1.35rem, md: 1.28rem, sm: 1.15rem),
+    h5: (default: 1.30rem, xl: 1.24rem, lg: 1.17rem, md: 1.10rem, sm: 0.95rem),
+    h6: (default: 1.10rem, xl: 1.05rem, lg: 0.99rem, md: 0.94rem, sm: 0.85rem),
+);
+
+/** Standard Texts **/
+$text-sizes: (
+    text-1: (default: 0.85rem, xl: 0.81rem, lg: 0.77rem, md: 0.72rem, sm: 0.70rem),
+    text-2: (default: 0.90rem, xl: 0.86rem, lg: 0.81rem, md: 0.77rem, sm: 0.75rem),
+    text-3: (default: 0.95rem, xl: 0.90rem, lg: 0.86rem, md: 0.81rem, sm: 0.80rem),
+    text-4: (default: 1.00rem, xl: 0.95rem, lg: 0.90rem, md: 0.85rem, sm: 0.85rem),
+    text-5: (default: 1.05rem, xl: 1.00rem, lg: 0.95rem, md: 0.89rem, sm: 0.90rem),
+);
+
+/** Leads **/
+$lead-sizes: (
+    display-1: (default: 3.25rem, xl: 3.09rem, lg: 2.93rem, md: 2.76rem, sm: 2.50rem),
+    display-2: (default: 3.50rem, xl: 3.33rem, lg: 3.15rem, md: 2.98rem, sm: 2.70rem),
+    display-3: (default: 3.75rem, xl: 3.56rem, lg: 3.38rem, md: 3.19rem, sm: 2.95rem),
+    display-4: (default: 4.00rem, xl: 3.80rem, lg: 3.60rem, md: 3.40rem, sm: 3.15rem),
+    display-5: (default: 5.00rem, xl: 4.75rem, lg: 4.50rem, md: 4.25rem, sm: 3.85rem),
+    display-6: (default: 6.5rem, xl: 6.25rem, lg: 6rem, md: 5.75rem, sm: 5.25rem),
+    display-7: (default: 8rem, xl: 7.75rem, lg: 7.5rem, md: 7.25rem, sm: 6.75rem),
+
+    lead:   (default: 1.20rem, xl: 1.14rem, lg: 1.08rem, md: 1.02rem, sm: 0.90rem),
+    lead-2: (default: 1.40rem, xl: 1.33rem, lg: 1.26rem, md: 1.19rem, sm: 1.10rem),
+    lead-3: (default: 1.75rem, xl: 1.66rem, lg: 1.58rem, md: 1.49rem, sm: 1.35rem),
+    lead-4: (default: 2.25rem, xl: 2.14rem, lg: 2.03rem, md: 1.91rem, sm: 1.85rem),
+);
+
+@each $text, $size in $text-sizes {
+    .#{$text} {
+        font-size: map-get($size, default);
+
+        @include media-breakpoint-down(xl) {
+            font-size: map-get($size, xl);
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: map-get($size, lg);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: map-get($size, md);
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: map-get($size, sm);
+        }
+    }
+}
+
+@each $heading, $size in $heading-sizes {
+    #{$heading}, .#{$heading}, .eq-#{$heading} {
+        font-size: map-get($size, default)!important;
+
+        @include media-breakpoint-down(xl) {
+            font-size: map-get($size, xl)!important;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: map-get($size, md)!important;
+        }
+    }
+}
+
+@each $text, $size in $lead-sizes {
+    .#{$text} {
+        font-size: map-get($size, default)!important;
+
+        @include media-breakpoint-down(xl) {
+            font-size: map-get($size, xl)!important;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: map-get($size, lg)!important;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: map-get($size, md)!important;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: map-get($size, sm)!important;
+        }
+    }
+}
+
+a {
+    text-decoration: none!important;
+    color: var(--theme-highlight-2)!important;
+    &:hover {
+        color: var(--theme-highlight-3)!important;
+    }
+
+    span, .fa-icon-wrapper, .fa-icon {
+        user-select: none;
+        pointer-events: none;
+    }
+}
+
+.font-family-headings {
+    font-family: $headings-font-family!important;
+}
+
+.font-family-subheadings {
+    font-family: $custom-subheadings-font-family!important;
+}
+
+.text-highlight {
+    color: var(--theme-highlight);
+}
+
+.text-muted {
+    color: var(--theme-muted)!important;
+}
+
+.text-secondary-2 {
+    color: var(--theme-secondary-2);
+}
+
+.text-secondary-3 {
+    color: var(--theme-secondary-3);
+}
+
+.text-secondary-4 {
+    color: var(--theme-secondary-4);
+}

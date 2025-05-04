@@ -1,0 +1,35 @@
+@import "/src/styles/extend";
+
+.info-card {
+    height: 100%;
+    position: relative;
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .circle-avatar {
+        border-color: var(--theme-soft-3);
+        background-color: var(--theme-tag-color);
+        @include media-breakpoint-down(md) {
+            border-width: 4px;
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--theme-soft-2);
+
+        .info-badge {
+            min-width: 130px;
+        }
+    }
+}

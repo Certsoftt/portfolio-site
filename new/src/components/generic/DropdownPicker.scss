@@ -1,0 +1,21 @@
+@import "/src/styles/extend";
+
+.dropdown-picker-wrapper {
+    width: 100%;
+}
+
+.dropdown-picker {
+    width: 100%;
+}
+
+.dropdown-picker-toggle {
+    padding: 0!important;
+    width: 100%;
+    background-color: transparent!important;
+    border: 0!important;
+    color: inherit!important;
+
+    &:after {
+        content: none!important;
+    }
+}

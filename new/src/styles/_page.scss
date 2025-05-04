@@ -1,0 +1,44 @@
+body {
+    overflow-x: hidden!important;
+    touch-action: manipulation;
+    width: 100%;
+    background-color: $loader-background-color;
+    @include media-breakpoint-up($sidebar-min-breakpoint) {
+        position: fixed!important;
+        overflow-y: hidden!important;
+    }
+}
+
+.body-android {
+    @include media-breakpoint-up($sidebar-min-breakpoint) {
+        position: relative!important;
+        overflow-y: auto!important;
+    }
+}
+
+body.body-with-image {
+    background-image: var(--theme-bg);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--theme-bg-color)!important;
+}
+
+body.body-no-scroll {
+    overflow-y: hidden!important;
+}
+
+.highlight-scrollbar {
+    ::-webkit-scrollbar { max-width: 4px; }
+    ::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 4px var(--theme-scrollbar-track); }
+    ::-webkit-scrollbar-thumb { background-color: var(--theme-scrollbar-thumb)!important; }
+}
+
+::-moz-selection {
+    color: var(--theme-dark);
+    background: var(--theme-dar);
+}
+
+::selection {
+    color: var(--theme-dark);
+    background: var(--theme-highlight-2);
+}

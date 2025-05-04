@@ -1,0 +1,35 @@
+@import "/src/styles/extend";
+
+#confirmation-modal {
+    align-items: start;
+    justify-content: center;
+
+    .custom-modal-window {
+        min-width: 650px;
+        max-width: 700px;
+        @include media-breakpoint-down(md) {
+            min-width: 90vw;
+        }
+    }
+}
+
+.confirmation-window-content {
+    padding: 20px;
+    background-color: rgba($secondary, 0.05)
+}
+
+.confirmation-window-message {
+    padding-bottom: 20px;
+}
+
+.confirmation-window-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        .fa-icon-wrapper, span {
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+}

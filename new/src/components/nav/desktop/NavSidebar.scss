@@ -1,0 +1,43 @@
+@import "/src/styles/extend";
+
+div.sidebar {
+    width: $sidebar-width;
+    min-width: $sidebar-width;
+    border-radius: $standard-border-radius;
+    z-index: $z-index-sidebar;
+    padding: 1rem 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down($sidebar-min-breakpoint) {
+        display: none;
+    }
+
+    .btn-toggle {
+        position: absolute;
+        right: -15px;
+        top: 65px;
+    }
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: $standard-border-radius;
+}
+
+div.sidebar-shrink {
+    width: $sidebar-shrink-width;
+    min-width: $sidebar-shrink-width;
+
+    .btn-toggle {
+        top: 45px;
+        right: -15px;
+    }
+
+    .fullscreen-toggle {
+        display: none;
+    }
+}

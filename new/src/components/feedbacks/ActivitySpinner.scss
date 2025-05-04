@@ -1,0 +1,40 @@
+@import "/src/styles/extend";
+
+.activity-spinner {
+    position: fixed;
+    z-index: $z-index-activity-spinner;
+    background-color: rgba(black, 0.96);
+
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 20px;
+
+    &-hidden {
+        display: none;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+.activity-spinner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+    pointer-events: none;
+
+    .spinner {
+        max-width: max(120px, 30vw);
+        aspect-ratio: 1/1;
+        transition: 0.4s all ease-out;
+    }
+}

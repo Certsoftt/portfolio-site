@@ -1,0 +1,51 @@
+@import "/src/styles/extend";
+
+.testimonial {
+    --balloon-max-height: 280px;
+    --balloon-padding: 1.5rem;
+    @include media-breakpoint-down(md) {
+        --balloon-padding: 1rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+
+    .testimonial-balloon {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        align-items: center;
+        position: relative;
+
+        max-height: var(--balloon-max-height);
+        padding: var(--balloon-padding);
+        margin-bottom: 1.5rem;
+
+        background-color: var(--theme-soft-2);
+        border-radius: $standard-border-radius;
+
+        .triangle {
+            position: absolute;
+            bottom: -10px;
+            width: 0;
+            height: 0;
+
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid var(--theme-soft-2);
+        }
+
+        .fa-icon {
+            color: var(--theme-highlight);
+        }
+    }
+
+    .testimonial-info {
+        .name {
+            font-family: $custom-subheadings-font-family;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import 'variables';
+
+// importing bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// importing swiper
+@import "swiper/swiper-bundle.css";
+
+// importing core styling file
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// our project needs Solid + Brands
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// importing globals
+@import "customs";
+@import "typography";
+@import "page";
+@import "forms";

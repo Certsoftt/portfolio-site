@@ -1,0 +1,15 @@
+@import "/src/styles/extend";
+
+.swiper-full-width {
+    height: 100%;
+    user-select: none;
+
+    .swiper-slide {
+        height: auto !important;
+        padding-bottom: 30px;
+    }
+
+    .swiper-content {
+        height: 100% !important
+    }
+}

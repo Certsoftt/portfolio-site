@@ -1,0 +1,291 @@
+{
+    "locales": {
+        "en": {
+            "title": "Life recently",
+            "title_menu": "Updates",
+            "title_long_prefix": "Take a look at my",
+            "title_long": "Recent **Updates**"
+        },
+
+        "es": {
+            "title": "Vida Reciente",
+            "title_menu": "Actualizaciones",
+            "title_long_prefix": "Consulta mis",
+            "title_long": "Actualizaciones **Recientes**"
+        },
+
+        "fr": {
+            "title": "Vie Récente",
+            "title_menu": "Mises à Jour",
+            "title_long_prefix": "Découvrez mes",
+            "title_long": "Dernières **Mises à Jour**"
+        },
+
+        "ko": {
+            "title": "최근의 삶",
+            "title_menu": "업데이트",
+            "title_long_prefix": "내 최근",
+            "title_long": "**업데이트**를 확인해 보세요"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "fun_facts",
+            "component": "ArticleServices",
+            "config": {},
+            "locales": {},
+
+            "items": [
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-tablet-screen-button",
+                        "faColors": null
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "03",
+                            "info": "Apps published"
+                        },
+                        "es": {
+                            "title": "03",
+                            "info": "Aplicaciones publicadas"
+                        },
+                        "fr": {
+                            "title": "03",
+                            "info": "Applications publiées"
+                        },
+                        "ko": {
+                            "title": "03",
+                            "info": "출시된 앱"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-star",
+                        "faColors": null
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "100+",
+                            "info": "Stars on GitHub"
+                        },
+                        "es": {
+                            "title": "100+",
+                            "info": "Estrellas en GitHub"
+                        },
+                        "fr": {
+                            "title": "100+",
+                            "info": "Étoiles sur GitHub"
+                        },
+                        "ko": {
+                            "title": "100+",
+                            "info": "GitHub 별"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-globe",
+                        "faColors": null
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "12",
+                            "info": "Countries visited"
+                        },
+                        "es": {
+                            "title": "12",
+                            "info": "Países visitados"
+                        },
+                        "fr": {
+                            "title": "12",
+                            "info": "Pays visités"
+                        },
+                        "ko": {
+                            "title": "12",
+                            "info": "방문한 나라"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-diagram-project",
+                        "faColors": null
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "07",
+                            "info": "Open-source projects"
+                        },
+                        "es": {
+                            "title": "07",
+                            "info": "Proyectos de código abierto"
+                        },
+                        "fr": {
+                            "title": "07",
+                            "info": "Projets open-source"
+                        },
+                        "ko": {
+                            "title": "07",
+                            "info": "오픈 소스 프로젝트"
+                        }
+                    }
+                },
+                {
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-solid fa-coffee",
+                        "faColors": null
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "20,000",
+                            "info": "Coffees consumed"
+                        },
+                        "es": {
+                            "title": "20,000",
+                            "info": "Cafés consumidos"
+                        },
+                        "fr": {
+                            "title": "20,000",
+                            "info": "Cafés consommés"
+                        },
+                        "ko": {
+                            "title": "20,000",
+                            "info": "마신 커피"
+                        }
+                    }
+                }
+
+            ]
+        },
+
+        {
+            "id": "updates",
+            "component": "ArticleThread",
+            "config": {},
+            "locales": {
+                "en": { "title": "Quick **Facts**" },
+                "es": { "title": "Feed de **Noticias**" },
+                "fr": { "title": "Fil d'**Actualités**" },
+                "ko": { "title": "**뉴스** 피드" }
+            },
+
+            "items": [
+                {
+                    "dates": {
+                        "start": "09/01/2022",
+                        "end": null
+                    },
+                    "links": [],
+                    "locales": {
+                        "en": {
+                            "title": "Relocated to **California!**",
+                            "text": "Successfully transitioned to California to explore new career opportunities in the tech industry, leveraging the vibrant local ecosystem to enhance my professional growth."
+                        },
+                        "es": {
+                            "title": "¡Me mudé a **California!**",
+                            "text": "Transición exitosa a California para explorar nuevas oportunidades profesionales en la industria tecnológica, aprovechando el vibrante ecosistema local para mejorar mi crecimiento profesional."
+                        },
+                        "fr": {
+                            "title": "Déménagement en **Californie !**",
+                            "text": "Transition réussie en Californie pour explorer de nouvelles opportunités de carrière dans l'industrie technologique, tirant parti de l'écosystème local dynamique pour améliorer ma croissance professionnelle."
+                        },
+                        "ko": {
+                            "title": "**캘리포니아로 이사했습니다!**",
+                            "text": "기술 산업의 새로운 직업 기회를 탐색하기 위해 캘리포니아로 성공적으로 이주하였으며, 지역 생태계를 활용하여 전문성을 향상시키고 있습니다."
+                        }
+                    }
+                },
+
+                {
+                    "dates": {
+                        "start": "05/12/2023",
+                        "end": null
+                    },
+                    "links": [
+                        {"string": "see_more", "href": "https://youtube.com"}
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "Started my own **YouTube channel**!",
+                            "text": "Launched a YouTube channel focused on programming tutorials, sharing insights and techniques on various technologies, and engaging with a community of aspiring developers."
+                        },
+                        "es": {
+                            "title": "¡Inicié mi propio **canal de YouTube!**",
+                            "text": "Lancé un canal de YouTube enfocado en tutoriales de programación, compartiendo ideas y técnicas sobre diversas tecnologías, y participando en una comunidad de desarrolladores aspirantes."
+                        },
+                        "fr": {
+                            "title": "Création de ma propre **chaîne YouTube** !",
+                            "text": "Lancement d'une chaîne YouTube axée sur des tutoriels de programmation, partageant des idées et des techniques sur diverses technologies, et interagissant avec une communauté de développeurs en herbe."
+                        },
+                        "ko": {
+                            "title": "자신의 **유튜브 채널을** 시작했습니다!",
+                            "text": "프로그래밍 튜토리얼에 초점을 맞춘 유튜브 채널을 시작하여 다양한 기술에 대한 통찰력과 기법을 공유하고, 개발자 지망생 커뮤니티와 소통하고 있습니다."
+                        }
+                    }
+                },
+
+                {
+                    "dates": {
+                        "start": "11/05/2024",
+                        "end": null
+                    },
+                    "links": [],
+                    "locales": {
+                        "en": {
+                            "title": "Working on a new **mobile project**!",
+                            "text": "Currently developing a mobile application that integrates innovative features and user-friendly design, aimed at enhancing user experience and addressing specific market needs."
+                        },
+                        "es": {
+                            "title": "¡Trabajando en un nuevo **proyecto móvil**!",
+                            "text": "Actualmente desarrollando una aplicación móvil que integra características innovadoras y un diseño fácil de usar, con el objetivo de mejorar la experiencia del usuario y atender necesidades específicas del mercado."
+                        },
+                        "fr": {
+                            "title": "Travail sur un nouveau **projet mobile** !",
+                            "text": "Actuellement en train de développer une application mobile qui intègre des fonctionnalités innovantes et un design convivial, visant à améliorer l'expérience utilisateur et à répondre à des besoins spécifiques du marché."
+                        },
+                        "ko": {
+                            "title": "새 **모바일 프로젝트** 작업 중!",
+                            "text": "혁신적인 기능과 사용자 친화적인 디자인을 통합한 모바일 애플리케이션을 현재 개발 중이며, 사용자 경험을 향상하고 특정 시장의 요구를 충족하는 것을 목표로 하고 있습니다."
+                        }
+                    }
+                },
+
+                {
+                    "dates": {
+                        "start": "12/12/2024",
+                        "end": null
+                    },
+                    "links": [
+                        { "string": "see_more", "href": "https://ryanbalieiro.github.io/react-portfolio-template/" }
+                    ],
+                    "locales": {
+                        "en": {
+                            "title": "Launched my **personal website**!",
+                            "text": "Created a personal website to showcase my projects, share my journey in programming, and provide resources for fellow developers."
+                        },
+                        "es": {
+                            "title": "¡Lancé mi **sitio web personal**!",
+                            "text": "Creé un sitio web personal para mostrar mis proyectos, compartir mi trayectoria en programación y proporcionar recursos para otros desarrolladores."
+                        },
+                        "fr": {
+                            "title": "Lancement de mon **site web personnel** !",
+                            "text": "Création d'un site web personnel pour présenter mes projets, partager mon parcours en programmation et fournir des ressources pour d'autres développeurs."
+                        },
+                        "ko": {
+                            "title": "**개인 웹사이트**를 시작했습니다!",
+                            "text": "내 프로젝트를 소개하고 프로그래밍 여정을 공유하며 다른 개발자들을 위한 리소스를 제공하기 위해 개인 웹사이트를 만들었습니다."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

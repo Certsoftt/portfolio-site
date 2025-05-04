@@ -1,0 +1,190 @@
+{
+    "locales": {
+        "en": {
+            "title": "Education",
+            "title_long_prefix": "This is my",
+            "title_long": "**Educational** Background"
+        },
+
+        "es": {
+            "title": "Educación",
+            "title_long_prefix": "Esta es mi",
+            "title_long": "**Formación** Educativa"
+        },
+
+        "fr": {
+            "title": "Éducation",
+            "title_long_prefix": "C'est mon",
+            "title_long": "**Contexte** Éducatif"
+        },
+
+        "ko": {
+            "title": "교육",
+            "title_long_prefix": "이것은 내",
+            "title_long": "**교육적** 배경"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "academic",
+            "component": "ArticleTimeline",
+            "config": {},
+            "locales": {},
+
+            "items": [
+                {
+                    "icon": {
+                        "img": "images/pictures/place-5.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "01/01/2015",
+                        "end": "12/01/2019"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Bachelor** in Computer Science",
+                            "info": "MIT",
+                            "text": "Earned a Bachelor's degree in Computer Science, focusing on algorithms, data structures, software engineering, and web development. Gained hands-on experience through various programming projects and boot camps.",
+                            "tags": []
+                        },
+                        "es": {
+                            "title": "**Licenciatura** en Ciencias de la Computación",
+                            "info": "MIT",
+                            "text": "Obtuve una licenciatura en Ciencias de la Computación, con un enfoque en algoritmos, estructuras de datos, ingeniería de software y desarrollo web. Adquirí experiencia práctica a través de varios proyectos de programación y campamentos de entrenamiento.",
+                            "tags": null
+                        },
+                        "fr": {
+                            "title": "**Licence** en Informatique",
+                            "info": "MIT",
+                            "text": "Obtenu une licence en Informatique, avec un accent sur les algorithmes, les structures de données, l'ingénierie logicielle et le développement web. Acquis une expérience pratique à travers divers projets de programmation et camps de formation.",
+                            "tags": null
+                        },
+                        "ko": {
+                            "title": "**학사** 컴퓨터 과학",
+                            "info": "MIT",
+                            "text": "알고리즘, 데이터 구조, 소프트웨어 공학 및 웹 개발에 중점을 둔 컴퓨터 과학 학사 학위를 취득했습니다. 다양한 프로그래밍 프로젝트와 부트캠프를 통해 실무 경험을 쌓았습니다.",
+                            "tags": null
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": "images/pictures/place-2.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "01/01/2014",
+                        "end": "06/01/2014"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "PHP Development **Nanodegree**",
+                            "info": "Udacity",
+                            "text": "Completed an intensive Nanodegree program focused on PHP development, covering essential skills like backend programming, database management, and web application deployment. This course provided a solid foundation in modern PHP practices.",
+                            "tags": ["PHP 8+", "Laravel", "MongoDB"]
+                        },
+                        "es": {
+                            "title": "Nanogrado en **Desarrollo PHP**",
+                            "info": "Udacity",
+                            "text": "Completé un programa intensivo de Nanogrado centrado en el desarrollo de PHP, cubriendo habilidades esenciales como la programación backend, la gestión de bases de datos y el despliegue de aplicaciones web. Este curso proporcionó una base sólida en las prácticas modernas de PHP.",
+                            "tags": null
+                        },
+                        "fr": {
+                            "title": "Nanodiplôme en **Développement PHP**",
+                            "info": "Udacity",
+                            "text": "Terminé un programme intensif de Nanodiplôme axé sur le développement PHP, couvrant des compétences essentielles telles que la programmation backend, la gestion de bases de données et le déploiement d'applications web. Ce cours a fourni une base solide dans les pratiques modernes de PHP.",
+                            "tags": null
+                        },
+                        "ko": {
+                            "title": "PHP 개발 **나노디그리**",
+                            "info": "Udacity",
+                            "text": "PHP 개발에 중점을 둔 집중 나노디그리 프로그램을 완료하여 백엔드 프로그래밍, 데이터베이스 관리 및 웹 애플리케이션 배포와 같은 필수 기술을 배웠습니다. 이 과정은 현대 PHP 실무에 대한 탄탄한 기초를 제공했습니다.",
+                            "tags": null
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": "images/pictures/place-6.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "09/01/2020",
+                        "end": "06/01/2022"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**Master's** in Artificial Intelligence",
+                            "info": "University of Paris",
+                            "text": "<p>Completed a comprehensive Master's program focused on cutting-edge AI topics, including:</p> <ul><li>Machine Learning</li><li>Natural Language Processing (NLP)</li><li>Neural Networks</li></ul> <p class='mt-3'>Applied research and theory to develop practical AI-driven solutions, combining academic excellence with real-world innovation.</p>",
+                            "tags": []
+                        },
+                        "es": {
+                            "title": "**Máster** en Inteligencia Artificial",
+                            "info": "Universidad de París",
+                            "text": "<p>Completé un programa de máster integral centrado en temas de IA de vanguardia, incluyendo:</p> <ul><li>Aprendizaje Automático</li><li>Procesamiento del Lenguaje Natural (PLN)</li><li>Redes Neuronales</li></ul> <p class='mt-3'>Apliqué investigación y teoría para desarrollar soluciones prácticas impulsadas por IA, combinando la excelencia académica con la innovación en el mundo real.</p>",
+                            "tags": []
+                        },
+                        "fr": {
+                            "title": "**Master** en Intelligence Artificielle",
+                            "info": "Université de Paris",
+                            "text": "<p>J'ai terminé un programme de Master complet axé sur les sujets de pointe en IA, y compris:</p> <ul><li>Apprentissage Automatique</li><li>Traitement du Langage Naturel (TLN)</li><li>Réseaux Neuronaux</li></ul> <p class='mt-3'>J'ai appliqué la recherche et la théorie pour développer des solutions IA pratiques, alliant excellence académique et innovation réelle.</p>",
+                            "tags": []
+                        },
+                        "ko": {
+                            "title": "인공지능 **석사**",
+                            "info": "파리 대학교",
+                            "text": "<p>최첨단 인공지능 주제에 중점을 둔 석사 과정을 완료했습니다. 다룬 주제는 다음과 같습니다:</p> <ul><li>머신러닝</li><li>자연어 처리 (NLP)</li><li>신경망</li></ul> <p class='mt-3'>연구와 이론을 실제 AI 솔루션 개발에 적용하여 학문적 우수성과 실질적 혁신을 결합했습니다.</p>",
+                            "tags": []
+                        }
+                    }
+                },
+
+                {
+                    "icon": {
+                        "img": "images/pictures/place-4.png",
+                        "fa": "",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "dates": {
+                        "start": "09/01/2022",
+                        "end": "06/01/2024"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "**PhD** in Computer Science",
+                            "info": "Harvard University",
+                            "text": "<p>Currently pursuing a PhD with a focus on deep learning and its real-world applications, particularly in:</p> <ul><li>Computer Vision</li><li>Innovative AI research</li><li>Developing novel algorithms for image recognition</li></ul> <p class='mt-3'>Engaged in cutting-edge research and contributing to AI advancement through publications in top-tier conferences.</p>",
+                            "tags": ["Deep Learning", "Computer Vision", "AI Research", "Algorithms"]
+                        },
+                        "es": {
+                            "title": "**Doctorado** en Ciencias de la Computación",
+                            "info": "Universidad de Harvard",
+                            "text": "<p>Cursando un doctorado con enfoque en aprendizaje profundo y sus aplicaciones en el mundo real, específicamente en:</p> <ul><li>Visión por Computadora</li><li>Investigación innovadora en IA</li><li>Desarrollo de nuevos algoritmos para el reconocimiento de imágenes</li></ul> <p class='mt-3'>Involucrado en investigaciones de vanguardia y contribuyendo al avance de la IA a través de publicaciones en conferencias de primer nivel.</p>",
+                            "tags": ["Aprendizaje Profundo", "Visión por Computadora", "Investigación IA", "Algoritmos"]
+                        },
+                        "fr": {
+                            "title": "**Doctorat** en Informatique",
+                            "info": "Université de Harvard",
+                            "text": "<p>En cours de doctorat avec un accent sur l'apprentissage profond et ses applications pratiques, notamment dans:</p> <ul><li>Vision par Ordinateur</li><li>Recherche IA innovante</li><li>Développement de nouveaux algorithmes de reconnaissance d'images</li></ul> <p class='mt-3'>Impliqué dans des recherches de pointe et contribuant à l'avancement de l'IA par des publications dans des conférences de renom.</p>",
+                            "tags": ["Apprentissage Profond", "Vision par Ordinateur", "Recherche IA", "Algorithmes"]
+                        },
+                        "ko": {
+                            "title": "컴퓨터 과학 **박사**",
+                            "info": "하버드 대학교",
+                            "text": "<p>딥러닝과 그 실제 응용 분야에 중점을 둔 박사 과정을 수행 중입니다. 특히 다음에 초점을 맞추고 있습니다:</p> <ul><li>컴퓨터 비전</li><li>혁신적인 AI 연구</li><li>이미지 인식을 위한 새로운 알고리즘 개발</li></ul> <p class='mt-3'>최첨단 연구에 참여하고, 유명 학회에서 발표하여 AI 기술 발전에 기여하고 있습니다.</p>",
+                            "tags": ["딥러닝", "컴퓨터 비전", "AI 연구", "알고리즘"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

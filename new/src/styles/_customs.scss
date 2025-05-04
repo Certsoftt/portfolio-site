@@ -1,0 +1,177 @@
+/** Customizing Bootstrap/Swiper components... **/
+button {
+    &:focus {
+        box-shadow: none!important;
+        outline: none!important;
+        transition: none;
+    }
+}
+
+.btn {
+    border-radius: $standard-border-radius;
+}
+
+.btn-primary {
+    background-color: var(--theme-soft-3);
+    color: var(--theme-secondary);
+    border: 0;
+
+    &:hover, &:focus, &:active {
+        background-color: var(--theme-highlight)!important;
+        color: var(--theme-dark)!important;
+    }
+
+    &.disabled {
+        background-color: var(--theme-soft-3);
+        color: var(--theme-secondary);
+        opacity: 0.2;
+    }
+}
+
+.btn-secondary {
+    background-color: var(--theme-muted);
+    color: var(--theme-dark);
+    border: 0;
+
+    &:hover, &:focus, &:active {
+        background-color: var(--theme-secondary)!important;
+        color: var(--theme-dark)!important;
+    }
+
+    &.disabled {
+        background-color: var(--theme-muted);
+        color: var(--theme-dark);
+        opacity: 0.2;
+    }
+}
+
+.btn-highlight {
+    background-color: var(--theme-highlight);
+    color: var(--theme-dark);
+    border: 0;
+
+    &:hover, &:focus, &:active {
+        background-color: var(--theme-highlight-2)!important;
+        color: var(--theme-dark)!important;
+    }
+
+    &.disabled {
+        background-color: var(--theme-soft-3);
+        color: var(--theme-secondary);
+        opacity: 0.2;
+    }
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+.btn-xl {
+    padding: 1.125rem 2.3rem;
+    font-size: 1.05rem;
+    border-radius: 4rem;
+    font-weight: bold;
+    font-family: $custom-subheadings-font-family;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(xl) {
+        padding: 1rem 1.5rem;
+        font-size: 0.95rem
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 1rem 1.4rem;
+        font-size: 0.9rem
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0.75rem 1.2rem;
+        font-size: 0.85rem
+    }
+}
+
+.btn.selected {
+    user-select: none;
+    pointer-events: none;
+    background-color: var(--theme-highlight)!important;
+    color: var(--theme-dark)!important;
+}
+
+.card {
+    background-color: var(--theme-soft);
+    color: var(--theme-secondary);
+    border: 0;
+    border-radius: $standard-border-radius;
+
+    &-header, &-footer {
+        background-color: transparent;
+    }
+
+    &-header {
+        border-bottom: 1px solid var(--theme-soft-2)
+    }
+
+    &-footer {
+        border-top: 1px solid var(--theme-soft-2)
+    }
+}
+
+.dropdown-menu {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid rgba(black, 0.1);
+    margin-left: 10px;
+    min-width: 200px;
+    background-color: var(--theme-main);
+}
+
+.dropdown-item {
+    span.menu-item-label {
+        color: var(--theme-secondary);
+        font-size: 0.9rem;
+        opacity: 0.7!important;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover, &:focus {
+        background-color: var(--theme-highlight);
+        span.menu-item-label {
+            color: var(--theme-dark);
+            opacity: 1!important;
+        }
+    }
+}
+
+.progress {
+    background-color: var(--theme-dark);
+    border-radius: 0;
+    overflow: hidden;
+    border: 1px solid var(--theme-soft-3);
+    padding: 3px;
+    height: 15px;
+
+    .progress-bar {
+        border-radius: 0;
+        background-color: var(--theme-highlight);
+    }
+}
+
+span.swiper-pagination-bullet {
+    width: 20px!important;
+    height: 5px!important;
+    position: relative;
+    top: 12px;
+    background: var(--theme-muted);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--theme-highlight);
+    transform: scale(1.2);
+}

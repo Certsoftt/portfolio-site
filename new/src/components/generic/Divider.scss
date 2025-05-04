@@ -1,0 +1,7 @@
+@import "/src/styles/extend";
+
+hr.divider-simple {
+    width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+}

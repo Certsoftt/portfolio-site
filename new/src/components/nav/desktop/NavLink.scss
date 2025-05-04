@@ -1,0 +1,10 @@
+@import "/src/styles/extend";
+
+.nav-link {
+    width: 100%!important;
+    transition: none;
+}
+
+.nav-link-rounded {
+    border-radius: $standard-border-radius;
+}

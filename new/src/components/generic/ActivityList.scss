@@ -1,0 +1,10 @@
+@import "/src/styles/extend";
+
+.activity-list-item {
+    display: flex;
+    align-items: start;
+    min-height: 60px;
+    @include media-breakpoint-down(lg) {
+        min-height: 50px;
+    }
+}

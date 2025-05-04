@@ -1,0 +1,85 @@
+@import "/src/styles/extend";
+
+button.tool-button {
+    --color: var(--theme-secondary);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: none;
+
+    .tool-button-content {
+        pointer-events: none;
+    }
+
+    background-color: var(--theme-nav-background)!important;
+    color: var(--theme-nav-secondary)!important;
+    border: 2px solid var(--theme-nav-light)!important;
+    border-radius: 100%;
+    box-shadow: var(--theme-box-shadow);
+
+    .fa-icon {
+        transition: scale 0.1s ease-out;
+        opacity: 0.3;
+    }
+
+    &:hover {
+        color: var(--theme-nav-secondary)!important;
+
+        .fa-icon {
+            scale: 1.2;
+            opacity: 1;
+        }
+    }
+}
+
+button.tool-button-color-dark {
+    background-color: var(--theme-section-background)!important;
+    border-color: var(--theme-soft-3)!important;
+    color: var(--theme-secondary)!important;
+    .fa-icon {
+        opacity: 1;
+    }
+
+    &:hover {
+        background-color: var(--theme-highlight)!important;
+        border-color: var(--theme-soft-3)!important;
+        color: var(--theme-dark)!important;
+        .fa-icon {
+            scale: 1;
+            opacity: 1;
+        }
+    }
+}
+
+button.tool-button-color-highlight {
+    background-color: var(--theme-highlight)!important;
+    color: var(--theme-dark)!important;
+    border-color: var(--theme-highlight)!important;
+    .fa-icon {
+        opacity: 1;
+    }
+
+    &:hover {
+        background-color: var(--theme-highlight-3)!important;
+        color: var(--theme-dark)!important;
+        border-color: var(--theme-highlight-3)!important;
+        .fa-icon {
+            scale: 1;
+            opacity: 1;
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .tool-button-size-#{$i} {
+        $dimensions: calc(20px + ($i * 8px));
+        $font-size: calc(6px + ($i * 5px));
+
+        width: $dimensions;
+        height: $dimensions;
+        font-size: $font-size;
+
+    }
+}

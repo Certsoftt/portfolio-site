@@ -1,0 +1,58 @@
+@import "/src/styles/extend";
+
+.grid-item {
+    transition: opacity 0.3s linear, transform 0.5s ease-out;
+}
+
+.grid-item-hidden {
+    transition: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.6) translateY(-100px);
+}
+
+.grid-item {
+    margin-top: 30px;
+    height: calc(100% - 30px);
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 1rem 1.5rem;
+    }
+
+    .circle-avatar {
+        position: absolute;
+        top: -20px;
+        right: -6px;
+        @include media-breakpoint-down(md) {
+            top: -15px;
+            right: -2px;
+        }
+    }
+
+    .title-wrapper {
+        padding-right: 80px;
+        text-align: left;
+        @include media-breakpoint-down(xl) {
+            padding-right: 40px;
+        }
+    }
+
+    .text {
+        font-size: 0.85rem;
+        @include media-breakpoint-down(lg) {
+            font-size: 0.8rem;
+        }
+    }
+
+    .main-content-wrapper {
+        flex-grow: 1;
+    }
+
+    .links-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
