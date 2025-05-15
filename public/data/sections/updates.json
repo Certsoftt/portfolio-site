@@ -45,20 +45,20 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "03",
-                            "info": "Apps published"
+                            "title": "10+",
+                            "info": " Web Apps published"
                         },
                         "es": {
-                            "title": "03",
-                            "info": "Aplicaciones publicadas"
+                            "title": "10+",
+                            "info": "Web Aplicaciones publicadas"
                         },
                         "fr": {
-                            "title": "03",
-                            "info": "Applications publiées"
+                            "title": "10+",
+                            "info": "Web Applications publiées"
                         },
                         "ko": {
-                            "title": "03",
-                            "info": "출시된 앱"
+                            "title": "10+",
+                            "info": "Web출시된 앱"
                         }
                     }
                 },
@@ -70,19 +70,19 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "100+",
+                            "title": "70+",
                             "info": "Stars on GitHub"
                         },
                         "es": {
-                            "title": "100+",
+                            "title": "70+",
                             "info": "Estrellas en GitHub"
                         },
                         "fr": {
-                            "title": "100+",
+                            "title": "70+",
                             "info": "Étoiles sur GitHub"
                         },
                         "ko": {
-                            "title": "100+",
+                            "title": "700+",
                             "info": "GitHub 별"
                         }
                     }
@@ -95,19 +95,19 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "12",
+                            "title": "0",
                             "info": "Countries visited"
                         },
                         "es": {
-                            "title": "12",
+                            "title": "0",
                             "info": "Países visitados"
                         },
                         "fr": {
-                            "title": "12",
+                            "title": "0",
                             "info": "Pays visités"
                         },
                         "ko": {
-                            "title": "12",
+                            "title": "0",
                             "info": "방문한 나라"
                         }
                     }
@@ -120,19 +120,19 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "07",
+                            "title": "04",
                             "info": "Open-source projects"
                         },
                         "es": {
-                            "title": "07",
+                            "title": "04",
                             "info": "Proyectos de código abierto"
                         },
                         "fr": {
-                            "title": "07",
+                            "title": "04",
                             "info": "Projets open-source"
                         },
                         "ko": {
-                            "title": "07",
+                            "title": "04",
                             "info": "오픈 소스 프로젝트"
                         }
                     }
@@ -145,19 +145,19 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "20,000",
+                            "title": "0",
                             "info": "Coffees consumed"
                         },
                         "es": {
-                            "title": "20,000",
+                            "title": "0",
                             "info": "Cafés consumidos"
                         },
                         "fr": {
-                            "title": "20,000",
+                            "title": "0",
                             "info": "Cafés consommés"
                         },
                         "ko": {
-                            "title": "20,000",
+                            "title": "0",
                             "info": "마신 커피"
                         }
                     }
@@ -180,14 +180,14 @@
             "items": [
                 {
                     "dates": {
-                        "start": "09/01/2022",
+                        "start": "09/01/2024",
                         "end": null
                     },
                     "links": [],
                     "locales": {
                         "en": {
-                            "title": "Relocated to **California!**",
-                            "text": "Successfully transitioned to California to explore new career opportunities in the tech industry, leveraging the vibrant local ecosystem to enhance my professional growth."
+                            "title": "Delve into Smart Contract and **Blockchain**",
+                            "text": "Currently transitioning into Blockchain to explore new career opportunities in the tech industry, leveraging the vibrant local ecosystem to enhance my professional growth."
                         },
                         "es": {
                             "title": "¡Me mudé a **California!**",
@@ -210,7 +210,7 @@
                         "end": null
                     },
                     "links": [
-                        {"string": "see_more", "href": "https://youtube.com"}
+                        {"string": "see_more", "href": "https://youtube.com/@codemindsacademy"}
                     ],
                     "locales": {
                         "en": {
@@ -240,8 +240,8 @@
                     "links": [],
                     "locales": {
                         "en": {
-                            "title": "Working on a new **mobile project**!",
-                            "text": "Currently developing a mobile application that integrates innovative features and user-friendly design, aimed at enhancing user experience and addressing specific market needs."
+                            "title": "Working on personal **projects**!",
+                            "text": "Currently developing open source applications andlibraries that presents innovative features aimed at enhancing addressing specific market needs."
                         },
                         "es": {
                             "title": "¡Trabajando en un nuevo **proyecto móvil**!",
@@ -264,7 +264,7 @@
                         "end": null
                     },
                     "links": [
-                        { "string": "see_more", "href": "https://ryanbalieiro.github.io/react-portfolio-template/" }
+                        { "string": "see_more", "href": "https://certsoftt.github.io/portfolio-site/" }
                     ],
                     "locales": {
                         "en": {
