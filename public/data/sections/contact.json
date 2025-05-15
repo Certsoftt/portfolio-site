@@ -55,9 +55,9 @@
 
             "items": [
                 {
-                    "value": "+1 (123) 456-7890",
+                    "value": "+2348148106698",
                     "links": [
-                        {"href": "tel:11234567890"}
+                        {"href": "tel:08148106698"}
                     ],
                     "icon": {
                         "img": null,
@@ -73,9 +73,9 @@
                 },
 
                 {
-                    "value": "mark.choi@email.com",
+                    "value": "ukpeubong8573@gmail.com",
                     "links": [
-                        {"href": "mailto:mark.choi@email.com"}
+                        {"href": "mailto:ukpeubong8573@gmail.com"}
                     ],
                     "icon": {
                         "img": null,
@@ -89,9 +89,9 @@
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "@ubong-ukpe",
                     "links": [
-                        {"href": "https://linkedin.com"}
+                        {"href": "https://linkedin.com/in/ubong-ukpe"}
                     ],
                     "icon": {
                         "img": null,
@@ -104,9 +104,9 @@
                 },
 
                 {
-                    "value": "Mark Choi",
+                    "value": "Ubong Ukpe",
                     "links": [
-                        {"href": "https://facebook.com"}
+                        {"href": "https://web.facebook.com/ubong.ukpe.94"}
                     ],
                     "icon": {
                         "img": null,
@@ -119,32 +119,32 @@
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "@certsoftt",
                     "links": [
-                        {"href": "https://instagram.com"}
+                        {"href": "https://github.com/certsoftt"}
                     ],
                     "icon": {
                         "img": null,
-                        "fa": "fa-brands fa-instagram",
+                        "fa": "fa-brands fa-github",
                         "faColors": {"bg": null, "fill": null}
                     },
                     "locales": {
-                        "en": {"title": "Instagram"}
+                        "en": {"title": "Github"}
                     }
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "on whatsapp",
                     "links": [
-                        {"href": "https://tiktok.com"}
+                        {"href": "https://wa.me/+2348148106698"}
                     ],
                     "icon": {
                         "img": null,
-                        "fa": "fa-brands fa-tiktok",
+                        "fa": "fa-brands fa-whatsapp",
                         "faColors": {"bg": null, "fill": null}
                     },
                     "locales": {
-                        "en": {"title": "TikTok"}
+                        "en": {"title": "WhatsApp"}
                     }
                 }
             ]

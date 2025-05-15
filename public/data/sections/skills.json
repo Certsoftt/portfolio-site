@@ -200,11 +200,11 @@
                     },
                     "value": 90,
                     "dates": {
-                        "start": "03/10/2019"
+                        "start": "03/10/2022"
                     },
                     "locales": {
                         "en": {
-                            "title": "ReactNative",
+                            "title": "ExpressJS",
                             "info": null
                         }
                     }
@@ -234,7 +234,7 @@
                     },
                     "value": 80,
                     "dates": {
-                        "start": "08/30/2020"
+                        "start": "08/02/2025"
                     },
                     "locales": {
                         "en": {
@@ -266,9 +266,9 @@
                         "fa": "fa-brands fa-docker",
                         "faColors": {"bg": "#2496ED", "fill": "#EEE"}
                     },
-                    "value": 60,
+                    "value": 50,
                     "dates": {
-                        "start": "04/15/2021"
+                        "start": "04/15/2024"
                     },
                     "locales": {
                         "en": {
@@ -280,12 +280,12 @@
                 {
                     "icon": {
                         "img": null,
-                        "fa": "fa-brands fa-php",
+                        "fa": "fa-brands fa-laravel",
                         "faColors": {"bg": "#FFD700", "fill": "#111"}
                     },
-                    "value": 100,
+                    "value": 70,
                     "dates": {
-                        "start": "09/01/2018"
+                        "start": "09/01/2022"
                     },
                     "locales": {
                         "en": {
@@ -300,9 +300,9 @@
                         "fa": "fa-solid fa-life-ring",
                         "faColors": {"bg": "#326CE5", "fill": "#EEE"}
                     },
-                    "value": 80,
+                    "value": 50,
                     "dates": {
-                        "start": "07/10/2021"
+                        "start": "07/10/2024"
                     },
                     "locales": {
                         "en": {
@@ -317,7 +317,7 @@
                         "fa": "fa-solid fa-server",
                         "faColors": {"bg": "#47A248", "fill": "#EEE"}
                     },
-                    "value": 50,
+                    "value": 70,
                     "dates": {
                         "start": "05/20/2024"
                     },
@@ -336,7 +336,7 @@
                     },
                     "value": 95,
                     "dates": {
-                        "start": "01/01/2018"
+                        "start": "01/01/2024"
                     },
                     "locales": {
                         "en": {
@@ -428,10 +428,10 @@
                 {
                     "icon": {
                         "img": null,
-                        "fa": "fa-brands fa-vuejs",
+                        "fa": "fa-brands fa-ts",
                         "faColors": {"bg": "#4FC08D", "fill": "#111"}
                     },
-                    "value": 40,
+                    "value": 90,
                     "dates": {
                         "start": "08/30/2023"
                     },
@@ -450,7 +450,7 @@
                     },
                     "value": 90,
                     "dates": {
-                        "start": "02/10/2021"
+                        "start": "02/04/2025"
                     },
                     "locales": {
                         "en": {
