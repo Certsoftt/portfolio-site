@@ -195,7 +195,7 @@
                 {
                     "icon": {
                         "img": null,
-                        "fa": "fa-brands fa-java",
+                        "fa": "fa-brands fa-react",
                         "faColors": {"bg": "#007396", "fill": "#EEE"}
                     },
                     "value": 90,
@@ -204,7 +204,7 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "Java 11+",
+                            "title": "ReactNative",
                             "info": null
                         }
                     }
@@ -238,7 +238,7 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "Ruby on Rails",
+                            "title": "C++",
                             "info": null
                         }
                     }
@@ -255,7 +255,7 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "MySQL",
+                            "title": "MySQL & PostgreSQL",
                             "info": null
                         }
                     }
@@ -323,7 +323,7 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "MongoDB",
+                            "title": "Firebase & NocoDB",
                             "info": null
                         }
                     }
@@ -386,7 +386,7 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "CSS3",
+                            "title": "CSS3 & Ant Design",
                             "info": null
                         }
                     }
@@ -420,7 +420,7 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "React",
+                            "title": "React & React MaterialUI",
                             "info": null
                         }
                     }
@@ -437,7 +437,7 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "Vue.js",
+                            "title": "TypeScript & Styled-Componets",
                             "info": null
                         }
                     }
@@ -445,7 +445,7 @@
                 {
                     "icon": {
                         "img": null,
-                        "fa": "fa-brands fa-bootstrap",
+                        "fa": "fa-brands fa-redux",
                         "faColors": {"bg": "#7952B3", "fill": "#EEE"}
                     },
                     "value": 90,
@@ -454,7 +454,7 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "Bootstrap",
+                            "title": "Redux Toolkits",
                             "info": null
                         }
                     }
@@ -502,102 +502,6 @@
                             "title": "영어",
                             "info": "모국어 수준의 의사소통 및 글쓰기 능력을 보유.",
                             "tags": ["모국어"]
-                        }
-                    }
-                },
-
-                {
-                    "icon": {
-                        "img": "images/flags/fr.png",
-                        "fa": null,
-                        "faColors": { "bg": null, "fill": null }
-                    },
-                    "value": null,
-                    "dates": { "start": null },
-                    "locales": {
-                        "en": {
-                            "title": "French",
-                            "info": "Fluent in both spoken and written French; confident in professional communication.",
-                            "tags": ["Fluent"]
-                        },
-                        "es": {
-                            "title": "Francés",
-                            "info": "Fluido en francés hablado y escrito; seguro en la comunicación profesional.",
-                            "tags": ["Fluido"]
-                        },
-                        "fr": {
-                            "title": "Français",
-                            "info": "Fluent à l'oral et à l'écrit; confiant dans la communication professionnelle.",
-                            "tags": ["Courant"]
-                        },
-                        "ko": {
-                            "title": "프랑스어",
-                            "info": "구어 및 문어에 유창하며, 전문적인 소통에 자신감이 있음.",
-                            "tags": ["유창"]
-                        }
-                    }
-                },
-
-                {
-                    "icon": {
-                        "img": "images/flags/vn.png",
-                        "fa": null,
-                        "faColors": { "bg": null, "fill": null }
-                    },
-                    "value": null,
-                    "dates": { "start": null },
-                    "locales": {
-                        "en": {
-                            "title": "Vietnamese",
-                            "info": "Intermediate proficiency in Vietnamese language; can hold conversations and understand written text.",
-                            "tags": ["Intermediate"]
-                        },
-                        "es": {
-                            "title": "Vietnamita",
-                            "info": "Competencia intermedia en el idioma vietnamita; puede mantener conversaciones y entender textos escritos.",
-                            "tags": ["Intermedio"]
-                        },
-                        "fr": {
-                            "title": "Vietnamien",
-                            "info": "Compétence intermédiaire en vietnamien; peut tenir des conversations et comprendre des textes écrits.",
-                            "tags": ["Intermédiaire"]
-                        },
-                        "ko": {
-                            "title": "베트남어",
-                            "info": "중간 수준의 베트남어 실력; 대화 가능 및 글을 이해할 수 있음.",
-                            "tags": ["중급"]
-                        }
-                    }
-                },
-
-                {
-                    "icon": {
-                        "img": "images/flags/ko.png",
-                        "fa": null,
-                        "faColors": { "bg": null, "fill": null }
-                    },
-                    "value": null,
-                    "dates": { "start": null },
-                    "locales": {
-                        "en": {
-                            "title": "Korean",
-                            "info": "Basic understanding of Korean; learning and improving.",
-                            "tags": ["Basic"]
-                        },
-                        "es": {
-                            "title": "Coreano",
-                            "info": "Comprensión básica del coreano; aprendiendo y mejorando.",
-                            "tags": ["Básico"]
-                        },
-                        "fr": {
-                            "title": "Coréen",
-                            "info": "Compréhension de base du coréen; en apprentissage et amélioration.",
-                            "tags": ["Basique"]
-                        },
-                        "ko": {
-                            "title": "한국어",
-                            "info": "기초적인 한국어 이해; 배우는 중이며 향상 중.",
-                            "tags": ["기초"]
                         }
                     }
                 }
