@@ -14,9 +14,9 @@ Key features:
 - Uses **Vite** for packaging.
 - Emails with **EmailJS** - no backend needed!
 
-## [Live Preview](https://ryanbalieiro.github.io/react-portfolio-template/)
+## [Live Preview](https://certsoftt.netlify.app/)
 
-Check out the live version of the template deployed **[here on GitHub Pages](https://ryanbalieiro.github.io/react-portfolio-template/)**.
+Check out the live version of the template deployed **[here on GitHub Pages](https://certsoftt.github.io/portfolio-site/)**.
 
 ### 1. Base layout
 The layout uses a fixed central view with a left sidebar, adjusting perfectly across various monitor resolutions, from 4:3 to ultra-wide.
@@ -37,7 +37,7 @@ On mobile, the layout groups the portfolio sections into categories and transfor
 
 1. Clone the repo:
 ```
-git clone https://github.com/ryanbalieiro/react-portfolio-template
+git clone https://github.com/certsoftt/portfolio-site
 ```
 
 2. Go to the root directory of the project and install all dependencies with npm:
