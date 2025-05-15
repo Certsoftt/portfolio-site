@@ -40,15 +40,15 @@
                         "faColors": {"bg": null, "fill": null}
                     },
                     "dates": {
-                        "start": "01/01/2015",
+                        "start": "7/10/2014",
                         "end": "12/01/2019"
                     },
                     "locales": {
                         "en": {
-                            "title": "**Bachelor** in Computer Science",
+                            "title": "**Bachelor Engineering** in Electrical/Electronics Engineering",
                             "info": "MIT",
-                            "text": "Earned a Bachelor's degree in Computer Science, focusing on algorithms, data structures, software engineering, and web development. Gained hands-on experience through various programming projects and boot camps.",
-                            "tags": []
+                            "text": "Earned a Bachelor's degree in Electrical/Electronics Engineering, focusing on algorithms, data structures, software engineering, and web development. Gained hands-on experience through various programming projects and boot camps.",
+                            "tags": ["Algorithms", "Python Programming", "Computer Programming"]
                         },
                         "es": {
                             "title": "**Licenciatura** en Ciencias de la Computación",
@@ -78,31 +78,31 @@
                         "faColors": {"bg": null, "fill": null}
                     },
                     "dates": {
-                        "start": "01/01/2014",
-                        "end": "06/01/2014"
+                        "start": "01/01/2025",
+                        "end": "31/12/2025"
                     },
                     "locales": {
                         "en": {
-                            "title": "PHP Development **Nanodegree**",
-                            "info": "Udacity",
-                            "text": "Completed an intensive Nanodegree program focused on PHP development, covering essential skills like backend programming, database management, and web application deployment. This course provided a solid foundation in modern PHP practices.",
-                            "tags": ["PHP 8+", "Laravel", "MongoDB"]
+                            "title": "PHP Development **& Soft Skills**",
+                            "info": "LinkedIn Learning",
+                            "text": "Completed an intensive Soft skill program and a focused on PHP development, covering essential skills like backend programming, database management, and web application deployment. This course provided a solid foundation in modern PHP practices.",
+                            "tags": ["PHP 8+", "Laravel", "MySQL"]
                         },
                         "es": {
-                            "title": "Nanogrado en **Desarrollo PHP**",
-                            "info": "Udacity",
+                            "title": "Soft Skill en **Desarrollo PHP**",
+                            "info": "LinkedIn Learning",
                             "text": "Completé un programa intensivo de Nanogrado centrado en el desarrollo de PHP, cubriendo habilidades esenciales como la programación backend, la gestión de bases de datos y el despliegue de aplicaciones web. Este curso proporcionó una base sólida en las prácticas modernas de PHP.",
                             "tags": null
                         },
                         "fr": {
-                            "title": "Nanodiplôme en **Développement PHP**",
-                            "info": "Udacity",
+                            "title": "Soft Skill en **Développement PHP**",
+                            "info": "LinkedIn Learning",
                             "text": "Terminé un programme intensif de Nanodiplôme axé sur le développement PHP, couvrant des compétences essentielles telles que la programmation backend, la gestion de bases de données et le déploiement d'applications web. Ce cours a fourni une base solide dans les pratiques modernes de PHP.",
                             "tags": null
                         },
                         "ko": {
                             "title": "PHP 개발 **나노디그리**",
-                            "info": "Udacity",
+                            "info": "LinkedIn Learning",
                             "text": "PHP 개발에 중점을 둔 집중 나노디그리 프로그램을 완료하여 백엔드 프로그래밍, 데이터베이스 관리 및 웹 애플리케이션 배포와 같은 필수 기술을 배웠습니다. 이 과정은 현대 PHP 실무에 대한 탄탄한 기초를 제공했습니다.",
                             "tags": null
                         }
@@ -121,21 +121,21 @@
                     },
                     "locales": {
                         "en": {
-                            "title": "**Master's** in Artificial Intelligence",
-                            "info": "University of Paris",
-                            "text": "<p>Completed a comprehensive Master's program focused on cutting-edge AI topics, including:</p> <ul><li>Machine Learning</li><li>Natural Language Processing (NLP)</li><li>Neural Networks</li></ul> <p class='mt-3'>Applied research and theory to develop practical AI-driven solutions, combining academic excellence with real-world innovation.</p>",
-                            "tags": []
+                            "title": "**Diploma's** in Computer Science",
+                            "info": "Bringham Young University",
+                            "text": "<p>Completed a comprehensive Diploma program focused on cutting-edge Computer Programming & Database Engineering, including:</p> <ul><li>Software Development</li><li>Relational Database Management System (RDBMS)</li><li>Data Analysis & Data/Document Processing</li></ul> <p class='mt-3'>Applied research and theory to develop practical Software as a solution (Saas) application, combining academic excellence with real-world innovation.</p>",
+                            "tags": ["Database Engineering", "Computer Programming"]
                         },
                         "es": {
-                            "title": "**Máster** en Inteligencia Artificial",
-                            "info": "Universidad de París",
-                            "text": "<p>Completé un programa de máster integral centrado en temas de IA de vanguardia, incluyendo:</p> <ul><li>Aprendizaje Automático</li><li>Procesamiento del Lenguaje Natural (PLN)</li><li>Redes Neuronales</li></ul> <p class='mt-3'>Apliqué investigación y teoría para desarrollar soluciones prácticas impulsadas por IA, combinando la excelencia académica con la innovación en el mundo real.</p>",
+                            "title": "**Diploma's** in Computer Science",
+                            "info": "Universidad de Bringham Young",
+                            "text": "<p>Completé un programa de Diploma integral centrado en temas de IA de vanguardia, incluyendo:</p> <ul><li>Aprendizaje Automático</li><li>Procesamiento del Lenguaje Natural (PLN)</li><li>Redes Neuronales</li></ul> <p class='mt-3'>Apliqué investigación y teoría para desarrollar soluciones prácticas impulsadas por IA, combinando la excelencia académica con la innovación en el mundo real.</p>",
                             "tags": []
                         },
                         "fr": {
-                            "title": "**Master** en Intelligence Artificielle",
-                            "info": "Université de Paris",
-                            "text": "<p>J'ai terminé un programme de Master complet axé sur les sujets de pointe en IA, y compris:</p> <ul><li>Apprentissage Automatique</li><li>Traitement du Langage Naturel (TLN)</li><li>Réseaux Neuronaux</li></ul> <p class='mt-3'>J'ai appliqué la recherche et la théorie pour développer des solutions IA pratiques, alliant excellence académique et innovation réelle.</p>",
+                            "title": "**Diploma's** in Computer Science",
+                            "info": "Université de Bringham Young",
+                            "text": "<p>J'ai terminé un programme de Diploma complet axé sur les sujets de pointe en IA, y compris:</p> <ul><li>Apprentissage Automatique</li><li>Traitement du Langage Naturel (TLN)</li><li>Réseaux Neuronaux</li></ul> <p class='mt-3'>J'ai appliqué la recherche et la théorie pour développer des solutions IA pratiques, alliant excellence académique et innovation réelle.</p>",
                             "tags": []
                         },
                         "ko": {
@@ -154,15 +154,15 @@
                         "faColors": {"bg": null, "fill": null}
                     },
                     "dates": {
-                        "start": "09/01/2022",
-                        "end": "06/01/2024"
+                        "start": "09/01/2024",
+                        "end": "31/12/2025"
                     },
                     "locales": {
                         "en": {
-                            "title": "**PhD** in Computer Science",
-                            "info": "Harvard University",
-                            "text": "<p>Currently pursuing a PhD with a focus on deep learning and its real-world applications, particularly in:</p> <ul><li>Computer Vision</li><li>Innovative AI research</li><li>Developing novel algorithms for image recognition</li></ul> <p class='mt-3'>Engaged in cutting-edge research and contributing to AI advancement through publications in top-tier conferences.</p>",
-                            "tags": ["Deep Learning", "Computer Vision", "AI Research", "Algorithms"]
+                            "title": "**Software Development** & DevOps",
+                            "info": "3MTT & Cisco Networking Academy",
+                            "text": "<p>Currently pursuing a further learning with a focus on Cloud Computing, Automation and Testing, and its real-world applications, particularly in:</p> <ul><li>Software Development</li><li>DevOps Pipelines</li><li>Cloud Computing and Automation</li></ul> <p class='mt-3'>Engaged in cutting-edge research and contributing to AI advancement through publications in top-tier conferences.</p>",
+                            "tags": ["Cloud Computing", "Testing & Automation", "CI/CD Pipelines", "Software Development"]
                         },
                         "es": {
                             "title": "**Doctorado** en Ciencias de la Computación",

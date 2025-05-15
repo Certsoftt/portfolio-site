@@ -5,20 +5,20 @@
 
     "preloader": {
         "enabled": true,
-        "title": "React <b>Portfolio</b>",
-        "subtitle": "by Ryan Balieiro"
+        "title": "Certsoftt a.k.a <b>Ubsimple</b>",
+        "subtitle": "Welcome to my portfolio"
     },
 
     "profile": {
         "name": "Mark Choi",
-        "stylizedName": "<strong>Mark **Choi**</strong>",
+        "stylizedName": "<strong>Ubong **Sunday**</strong>",
         "logoUrl": "images/svg/logo.svg",
         "profilePictureUrl": "images/pictures/avatar.jpg",
 
         "locales": {
-            "en": {"role": "Web Developer"},
-            "es": {"role": "Desarrollador Web"},
-            "fr": {"role": "Développeur Web"},
+            "en": {"role": "Full Stack Developer"},
+            "es": {"role": "Desarrollador Full Stack"},
+            "fr": {"role": "Développeur Full Stack"},
             "ko": {"role": "웹 개발자"}
         }
     },
