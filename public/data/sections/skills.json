@@ -195,7 +195,7 @@
                 {
                     "icon": {
                         "img": null,
-                        "fa": "fa-brands fa-react",
+                        "fa": "fa-brands fa-expressjs",
                         "faColors": {"bg": "#007396", "fill": "#EEE"}
                     },
                     "value": 90,
@@ -428,7 +428,7 @@
                 {
                     "icon": {
                         "img": null,
-                        "fa": "fa-brands fa-ts",
+                        "fa": "fa-brands fa-typescript",
                         "faColors": {"bg": "#4FC08D", "fill": "#111"}
                     },
                     "value": 90,
